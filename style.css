@@ -23,8 +23,6 @@
 }
 
 
-
-
 .friends-blog:has(.like-anchor input:checked) {
   .toggle-like {
     color: rgb(37, 99, 235);
