@@ -1,0 +1,167 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Add your custom styles here */
+
+
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+:has(.like-anchor:hover) .emoji-package, .emoji-package:hover {
+  width: auto;
+  opacity: 1;
+  bottom: 2.3rem;
+  transition: all 0.3s ease-in-out;
+  transition-delay: 0.5s;
+  /* animation: hover-effect 0.3s ease-in-out forwards;
+  animation-delay: 0.5s;
+  z-index: 3; */
+}
+
+
+
+
+.friends-blog:has(.like-anchor input:checked) {
+  .toggle-like {
+    color: rgb(37, 99, 235);
+  }
+
+  i.icon-like, .icon {
+    display: block;
+    animation: toggle-like;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+  }
+
+  span.unliked {
+    display: none;
+  }
+
+  span.liked {
+    display: block;
+  }
+
+  .emoji-package {
+    width: 100%;
+    opacity: 0;
+    bottom: 0;
+    transition: all 0s ease-in-out;
+  }
+}
+
+:has(#like:checked) {
+  .icon-others {
+    display: none;
+  }
+  .icon-like {
+    display: block;
+  }
+}
+
+:has(#love:checked) {
+  .icon-like {
+    display: none;
+  }
+  .icon-love {
+    display: block;
+  }
+}
+
+:has(#happy:checked) {
+  .icon-others, .icon-like {
+    display: none;
+  }
+  .icon-happy {
+    display: block;
+  }
+}
+
+:has(#supprised:checked) {
+  .icon-others, .icon-like {
+    display: none;
+  }
+  .icon-supprised {
+    display: block;
+  }
+}
+
+:has(#sad:checked) {
+  .icon-others, .icon-like {
+    display: none;
+  }
+  .icon-sad {
+    display: block;
+  }
+}
+
+:has(#angry:checked) {
+  .icon-others, .icon-like {
+    display: none;
+  }
+  .icon-angry {
+    display: block;
+  }
+}
+
+
+
+@keyframes toggle-like {
+  0% {
+    scale: 1;
+    rotate: 0deg;
+  }
+
+  50% {
+    scale: 1.2;
+    rotate: -45deg;
+  }
+
+  100% {
+    scale: 1;
+    rotate: 0deg;
+  }
+}
+
+@keyframes hover-effect {
+  0% {
+    width: auto;
+    bottom: 0;
+    opacity: 1;
+  }
+
+  100% {
+    width: auto;
+    bottom: 2.3rem;
+    opacity: 1;
+  }
+}
+
+@media screen and (min-width: 1340px) {
+
+  .aside-left,
+  .aside-right {
+    flex-grow: 1;
+    max-width: 400px;
+  }
+
+  .middle {
+    width: 700px !important;
+    /*  */
+  }
+}
+
+/* shortcomings summary */
+
+/* html very difficult to read */
+/* media query, sometimes not working well */
+/* grid, no full function */
+/* hover or checkbox, not support selecting element other than self, e.g.  b:hover .c{} */
+/* not support pseudo element */
+/* not support 'has' */
+/* not support aspect-ratio */
+/* not support calc() */
+/* google fonts compatibility ？ */

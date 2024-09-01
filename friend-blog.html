@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://kit.fontawesome.com/2bb43ebecb.js" crossorigin="anonymous"></script>
+  <title>friend's blog</title>
+  <style>
+    .blog-img img {
+      width: 100%;
+      height: 50svh;
+    }
+
+
+    @media (min-width: 900px) {
+      .blog-img img {
+        width: 100%;
+        height: calc(100svh - 56px);
+        max-height: 690px;
+      }
+
+      main {
+        display: grid;
+        grid-template-columns: 1fr 360px;
+      }
+
+      .likes-comments {
+        width: 360px;
+        height: calc(100svh - 56px);
+      }
+    }
+  </style>
+</head>
+
+<body class="bg-white min-h-[100svh]">
+  <header class="h-14 sticky top-0 z-20 flex items-center px-4 bg-white shadow-[0_2px_2px_rgba(0,0,0,0.1)]">
+    <!-- facebook icon and search icon -->
+    <div class="home flex  items-center gap-2">
+      <a href="./index.html">
+        <i class="fa-brands fa-facebook text-blue-600 text-[40px]"></i>
+      </a>
+      <span class="w-10 h-10 rounded-full bg-slate-200 text-gray-500 grid place-content-center"><i
+          class="fa-solid fa-magnifying-glass text-sm"></i></span>
+    </div>
+    <!-- nav bar -->
+    <ul
+      class="nav-bar translate-x-6 px-10  flex-1 max-w-screen-custom-md mx-auto text-gray-500 text-2xl custom-md:flex custom-md:justify-center custom-md:gap-8 custom-md:items-center custom-md:text-center">
+      <li class="hidden flex-1  py-3  custom-md:block"><a href="#"><i class="fa-solid fa-house"></i></a></li>
+      <li class="hidden flex-1 custom-md:block"><a href="#"><i class="fa-brands fa-youtube "></i></a></li>
+      <li class="hidden flex-1 custom-md:block"><a href="#"><i class="fa-solid fa-shop"></i></a></li>
+      <li class="hidden flex-1 custom-md:block"><a href="#"><i class="fa-solid fa-users-viewfinder"></i></a></li>
+      <li class="fa-solid fa-bars"><a href="#"><i></i></a></li>
+    </ul>
+    <!-- info icon bar -->
+    <div class="info-bar flex gap-2 text-xl">
+      <span class="w-10 h-10 rounded-full bg-slate-200 grid place-content-center">
+        <i class="fa-solid fa-plus text-base"></i>
+      </span>
+      <span class="w-10 h-10 relative rounded-full bg-slate-200 grid place-content-center">
+        <i class="fa-brands fa-facebook-messenger"></i>
+        <div class="infos w-5 h-5 absolute -top-2 -right-2 bg-rose-600 rounded-full flex justify-center items-center">
+          <i class="count text-white text-sm roboto-regular">1</i>
+        </div>
+      </span>
+      <span class="w-10 h-10 relative rounded-full bg-slate-200 grid place-content-center">
+        <i class="fa-solid fa-bell"></i>
+        <div class="infos w-5 h-5 absolute -top-2 -right-2 bg-rose-600 rounded-full flex justify-center items-center">
+          <i class="count text-white text-sm roboto-regular">3</i>
+        </div>
+      </span>
+      <img class="w-10 h-10 rounded-full" src="./image/Avatar-2.jpg" alt="Avatar">
+    </div>
+  </header>
+
+  <main class="">
+    <!-- blog img -->
+    <div class="blog-img  bg-black overflow-hidden grid place-content-center
+  ">
+      <img class="object-contain h-[50svh]" src="./image/image-blog.jpeg" alt="">
+    </div>
+
+    <!-- likes and comments -->
+    <section class="friends-blog likes-comments bg-white rounded-lg  
+  custom-lg:w-[360px]">
+      <!-- friends-blog-header -->
+      <header class="flex justify-between items-center py-3 px-4 text-neutral-500">
+        <!-- name and avatar -->
+        <div class="flex items-center gap-2">
+          <img class="w-10 h-10 rounded-full" src="./image/friend-ava-3.jpeg" alt="Avatar">
+          <div>
+            <p class="text-black">Kelly Ann</p>
+            <div class=" text-sm">
+              <span>1h.</span>
+              <i class="fa-solid fa-earth-americas"></i>
+            </div>
+          </div>
+        </div>
+        <!-- icon:three points and icon:closing -->
+        <div class="text-2xl">
+          <i class="fa-solid fa-ellipsis mx-3"></i>
+        </div>
+      </header>
+      <!-- blog content -->
+      <p class="px-4 pb-3">After getting along for a long time, you will find that the greatest attraction between
+        people is not your appearance or your aura.
+        It’s about the down-to-earth, sincerity and kindness you convey to the other person.</p>
+      <!-- comments -->
+      <!-- like counts, input radio application -->
+      <div class="info-bar flex items-center text-xl px-4 py-2 border-b border-neutral-400">
+        <!-- default icon: like and love -->
+        <span class="w-5 h-5 rounded-full bg-blue-600 grid place-content-center">
+          <i class="fa-solid fa-thumbs-up text-xs text-white"></i>
+        </span>
+        <img class="icon-love w-[18px] h-[18px]" src="./image/love.png" alt="">
+        <img class="icon-happy icon-others hidden w-[18px] h-[18px]" src="./image/happy.png" alt="">
+        <img class="icon-supprised icon-others hidden w-[18px] h-[18px]" src="./image/wow.png" alt="">
+        <img class="icon-sad icon-others hidden w-[18px] h-[18px]" src="./image/sad.png" alt="">
+        <img class="icon-angry icon-others hidden w-[18px] h-[18px]" src="./image/angry.png" alt="">
+        <span class="unliked text-base text-neutral-500 ml-2">14</span>
+        <span class="hidden liked text-base text-neutral-500 ml-2">You and 14 others</span>
+      </div>
+
+      <!-- like, comments and share -->
+      <div
+        class="relative flex justify-between items-center gap-1 px-4 py-1  text-neutral-500  text-base border-b border-neutral-400">
+        <!-- like part -->
+        <a class="like-anchor flex-1" href="javasript:;">
+          <input id="toggle-like" type="checkbox" class="hidden absolute top-10">
+          <label for="toggle-like" class="relative z-10 cursor-pointer">
+            <div class="toggle-like text-neutral-500  w-full py-1 hover:bg-slate-200  rounded-lg">
+              <div class="flex items-center justify-center gap-2">
+                <!-- icon like -->
+                <i class="icon-like fa-solid fa-thumbs-up text-2xl"></i>
+                <span class="icon-like">Like</span>
+                <!-- icon love -->
+                <img class="icon-love icon-others hidden w-6 h-6" src="./image/love.png" alt="">
+                <span class="icon-love span-others hidden">Love</span>
+                <!-- icon happy -->
+                <img class="icon-happy icon-others hidden w-6 h-6" src="./image/happy.png" alt="">
+                <span class="icon-happy span-others hidden">Haha</span>
+                <!-- icon supprised -->
+                <img class="icon-supprised icon-others hidden w-6 h-6" src="./image/wow.png" alt="">
+                <span class="icon-supprised span-others hidden">Wow</span>
+                <!-- icon supprised -->
+                <img class="icon-sad icon-others hidden w-6 h-6" src="./image/sad.png" alt="">
+                <span class="icon-sad span-others hidden">Sad</span>
+                <!-- icon angry -->
+                <img class="icon-angry icon-others hidden w-6 h-6" src="./image/angry.png" alt="">
+                <span class="icon-angry span-others hidden">Angry</span>
+              </div>
+            </div>
+          </label>
+        </a>
+        <!-- emoji package -->
+        <div
+          class="emoji-package absolute w-0 left-0 bottom-0 opacity-0 flex gap-2 items-center bg-white px-[4px] py-[0] rounded-full shadow-[0_2px_2px_rgba(0,0,0,0.1)]">
+          <!-- emoji like -->
+          <input id='like' type="radio" name="icon-switch" class="hidden absolute">
+          <label for="like" class="cursor-pointer">
+            <img
+              class="w-9 h-9 transform transition-all duration-300 ease-in-out hover:scale-125 origin-bottom object-contain"
+              src="./image/emoji-thumb-up.gif" alt="">
+          </label>
+          <!-- emoji love -->
+          <input id='love' type="radio" name="icon-switch" class="hidden absolute">
+          <label for="love" class="cursor-pointer">
+            <img class="w-9 h-9 transform transition-all duration-300 ease-in-out hover:scale-125 origin-bottom"
+              src="./image/emoji-love-2.gif" alt="">
+          </label>
+          <!-- emoji happy -->
+          <input id='happy' type="radio" name="icon-switch" class="hidden absolute">
+          <label for="happy" class="cursor-pointer">
+            <img class="w-9 h-9 transform transition-all duration-300 ease-in-out hover:scale-125 origin-bottom"
+              src="./image/emoji-happy.gif" alt="">
+          </label>
+          <!-- emoji supprised -->
+          <input id='supprised' type="radio" name="icon-switch" class="hidden absolute">
+          <label for="supprised" class="cursor-pointer">
+            <img class="w-9 h-9 transform transition-all duration-300 ease-in-out hover:scale-125 origin-bottom"
+              src="./image/emoji-supprised.gif" alt="">
+          </label>
+          <!-- emoji sad -->
+          <input id='sad' type="radio" name="icon-switch" class="hidden absolute">
+          <label for="sad" class="cursor-pointer">
+            <img class="w-9 h-9 transform transition-all duration-300 ease-in-out hover:scale-125 origin-bottom"
+              src="./image/emoji-sad.gif" alt="">
+          </label>
+          <!-- emoji angry -->
+          <input id='angry' type="radio" name="icon-switch" class="hidden absolute">
+          <label for="angry" class="cursor-pointer">
+            <img class="w-9 h-9 transform transition-all duration-300 ease-in-out hover:scale-125 origin-bottom"
+              src="./image/emoji-angry.gif" alt="">
+          </label>
+        </div>
+        <a class="flex-1" href="javasript:;">
+          <div class="flex items-center justify-center gap-2 w-full py-1 hover:bg-slate-200  rounded-lg">
+            <i class="fa-regular fa-comment text-2xl"></i>
+            <span>Comment</span>
+          </div>
+        </a>
+        <a class="flex-1" href="javasript:;">
+          <div class="flex items-center justify-center gap-2 w-full py-1 hover:bg-slate-200   rounded-lg">
+            <i class="fa-solid fa-share text-2xl"></i>
+            <span>Share</span>
+          </div>
+        </a>
+      </div>
+      <!-- my comment -->
+      <div class="relative py-2 w-full flex items-center gap-2 px-4 text-neutral-500">
+        <img class="w-10 h-10 rounded-full" src="./image/Avatar-2.jpg" alt="Avatar">
+        <form action="" class="flex-1">
+          <input type="text" class="w-full p-2 rounded-full bg-slate-200  focus:outline-none"
+            placeholder="Comments as xxx">
+          </input>
+          <button class="absolute"></button>
+        </form>
+        <div class="absolute right-6 flex gap-2 ">
+          <i class="fa-regular fa-comment"></i>
+          <i class="fa-regular fa-face-smile"></i>
+          <i class="fa-solid fa-camera"></i>
+          <i class="fa-regular fa-image"></i>
+          <i class="fa-regular fa-note-sticky"></i>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>
