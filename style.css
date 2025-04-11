@@ -48,59 +48,121 @@
   }
 }
 
-:has(#like:checked) {
-  .icon-others {
-    display: none;
+.friends-blog.blog1 {
+  :has(#like-1:checked) {
+    .icon-others {
+      display: none;
+    }
+    .icon-like {
+      display: block;
+      /* color:rgb(37, 99, 235); */
+    }
   }
-  .icon-like {
-    display: block;
+  
+  :has(#love-1:checked) {
+    .icon-like {
+      display: none;
+    }
+    .icon-love {
+      display: block;
+    }
+  }
+  
+  :has(#happy-1:checked) {
+    .icon-others, .icon-like {
+      display: none;
+    }
+    .icon-happy {
+      display: block;
+    }
+  }
+  
+  :has(#supprised-1:checked) {
+    .icon-others, .icon-like {
+      display: none;
+    }
+    .icon-supprised {
+      display: block;
+    }
+  }
+  
+  :has(#sad-1:checked) {
+    .icon-others, .icon-like {
+      display: none;
+    }
+    .icon-sad {
+      display: block;
+    }
+  }
+  
+  :has(#angry-1:checked) {
+    .icon-others, .icon-like {
+      display: none;
+    }
+    .icon-angry {
+      display: block;
+    }
   }
 }
 
-:has(#love:checked) {
-  .icon-like {
-    display: none;
+.friends-blog.blog2 {
+  :has(#like-2:checked) {
+    .icon-others {
+      display: none;
+    }
+    .icon-like {
+      display: block;
+      /* color:rgb(37, 99, 235); */
+    }
   }
-  .icon-love {
-    display: block;
+  
+  :has(#love-2:checked) {
+    .icon-like {
+      display: none;
+    }
+    .icon-love {
+      display: block;
+    }
+  }
+  
+  :has(#happy-2:checked) {
+    .icon-others, .icon-like {
+      display: none;
+    }
+    .icon-happy {
+      display: block;
+    }
+  }
+  
+  :has(#supprised-2:checked) {
+    .icon-others, .icon-like {
+      display: none;
+    }
+    .icon-supprised {
+      display: block;
+    }
+  }
+  
+  :has(#sad-2:checked) {
+    .icon-others, .icon-like {
+      display: none;
+    }
+    .icon-sad {
+      display: block;
+    }
+  }
+  
+  :has(#angry-2:checked) {
+    .icon-others, .icon-like {
+      display: none;
+    }
+    .icon-angry {
+      display: block;
+    }
   }
 }
 
-:has(#happy:checked) {
-  .icon-others, .icon-like {
-    display: none;
-  }
-  .icon-happy {
-    display: block;
-  }
-}
 
-:has(#supprised:checked) {
-  .icon-others, .icon-like {
-    display: none;
-  }
-  .icon-supprised {
-    display: block;
-  }
-}
-
-:has(#sad:checked) {
-  .icon-others, .icon-like {
-    display: none;
-  }
-  .icon-sad {
-    display: block;
-  }
-}
-
-:has(#angry:checked) {
-  .icon-others, .icon-like {
-    display: none;
-  }
-  .icon-angry {
-    display: block;
-  }
-}
 
 
 
