@@ -1,20 +1,23 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/facebook/vite.svg" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/2bb43ebecb.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- <script src="index.js"></script> -->
+    <title>My Facebook</title>
+    <link rel="stylesheet" crossorigin href="/facebook/assets/style-CLL-HR5v.css">
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/facebook/vite.svg" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-    rel="stylesheet">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <script src="https://kit.fontawesome.com/2bb43ebecb.js" crossorigin="anonymous"></script>
-  <!-- <script src="index.js"></script> -->
-  <title>My Facebook</title>
-  <link rel="stylesheet" crossorigin href="/facebook/assets/style-dVE1oZJJ.css">
-</head>
-
-<!-- 
+  <!-- 
   bg-slate-200
   border-blue-600
   text-neutral-500
@@ -25,688 +28,1271 @@
   }
  -->
 
-<body class="bg-slate-100 min-h-screen">
-  <header class="h-14 sticky top-0 z-20 flex items-center px-4 bg-white shadow-[0_2px_2px_rgba(0,0,0,0.1)]">
-    <!-- facebook icon and search icon -->
-    <div class="home flex  items-center gap-2 ">
-      <a href="./index.html">
-        <i class="fa-brands fa-facebook text-blue-600 text-[40px]"></i>
-      </a>
-      <span class="w-10 h-10 rounded-full bg-slate-200 text-gray-500 grid place-content-center"><i
-          class="fa-solid fa-magnifying-glass text-sm"></i>
-      </span>
-    </div>
-    <!-- nav bar -->
-    <ul
-      class="nav-bar translate-x-6 px-10  flex-1 max-w-screen-custom-md mx-auto text-gray-500 text-2xl custom-md:flex custom-md:justify-center custom-md:gap-8 custom-md:items-center custom-md:text-center">
-      <li class="hidden flex-1 text-blue-600 py-3 border-b-2 border-blue-600 custom-md:block"><a href="#"><i
-            class="fa-solid fa-house"></i></a></li>
-      <li class="hidden hover:bg-slate-200 rounded-lg py-2 flex-1 custom-md:block"><a href="#"><i
-            class="fa-brands fa-youtube "></i></a></li>
-      <li class="hidden hover:bg-slate-200 rounded-lg py-2 flex-1 custom-md:block"><a href="#"><i
-            class="fa-solid fa-users-viewfinder"></i></a></li>
-      <li class="hidden hover:bg-slate-200 rounded-lg py-2 flex-1 custom-md:block"><a href="#"><i
-            class="fa-solid fa-shop"></i></a></li>
-      <li class="fa-solid fa-bars hover:bg-slate-200 flex-1 rounded-lg py-2"><a href="#"><i></i></a></li>
-    </ul>
-    <!-- info icon bar -->
-    <div class="info-bar flex gap-2 text-xl">
-      <a href="">
-        <span class="w-10 h-10 rounded-full bg-slate-200 hover:bg-slate-300 grid place-content-center">
-          <i class="fa-solid fa-plus text-base"></i>
+  <body class="bg-slate-100 min-h-screen">
+    <header
+      class="h-14 sticky top-0 z-20 flex items-center px-4 bg-white shadow-[0_2px_2px_rgba(0,0,0,0.1)]"
+    >
+      <!-- facebook icon and search icon -->
+      <div class="home flex items-center gap-2">
+        <a href="./index.html">
+          <i class="fa-brands fa-facebook text-blue-600 text-[40px]"></i>
+        </a>
+        <span
+          class="w-10 h-10 rounded-full bg-slate-200 text-gray-500 grid place-content-center"
+          ><i class="fa-solid fa-magnifying-glass text-sm"></i>
         </span>
-      </a>
-      <a href="">
-        <span class="w-10 h-10 relative rounded-full bg-slate-200 hover:bg-slate-300 grid place-content-center">
-          <i class="fa-brands fa-facebook-messenger"></i>
-          <div class="infos w-5 h-5 absolute -top-2 -right-2 bg-rose-600 rounded-full flex justify-center items-center">
-            <i class="count text-white text-sm roboto-regular">1</i>
-          </div>
-        </span>
-      </a>
-      <a href="">
-        <span class="w-10 h-10 relative rounded-full bg-slate-200 hover:bg-slate-300 grid place-content-center">
-          <i class="fa-solid fa-bell"></i>
-          <div class="infos w-5 h-5 absolute -top-2 -right-2 bg-rose-600 rounded-full flex justify-center items-center">
-            <i class="count text-white text-sm roboto-regular">3</i>
-          </div>
-        </span>
-      </a>
-      <a href="">
-        <img class="w-10 h-10 rounded-full" src="/facebook/assets/Avatar-2-e-wt5czA.jpg" alt="Avatar">
-      </a>
-    </div>
-  </header>
-  <main class="
-  custom-lg:flex justify-end
-  custom-3xl: mx-auto
-  ">
-    <!-- sidebar left -->
-    <aside class="
-    aside-left
-    sticky
-    top-14
-    hidden
-    custom-xl:block
-    custom-3xl:mr-auto
-    custom-4xl:mr-0 custom-4xl:ml-auto
-    h-screen-minus-14 
-    min-h-[890px]
-    w-80 
-    pl-2
-    pr-10
-    pt-4
-    ">
-      <!-- left top -->
-      <div>
+      </div>
+      <!-- nav bar -->
+      <ul
+        class="nav-bar translate-x-6 px-10 flex-1 max-w-screen-custom-md mx-auto text-gray-500 text-2xl custom-md:flex custom-md:justify-center custom-md:gap-8 custom-md:items-center custom-md:text-center"
+      >
+        <li
+          class="hidden flex-1 text-blue-600 py-3 border-b-2 border-blue-600 custom-md:block"
+        >
+          <a href="#"><i class="fa-solid fa-house"></i></a>
+        </li>
+        <li
+          class="hidden hover:bg-slate-200 rounded-lg py-2 flex-1 custom-md:block"
+        >
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        </li>
+        <li
+          class="hidden hover:bg-slate-200 rounded-lg py-2 flex-1 custom-md:block"
+        >
+          <a href="#"><i class="fa-solid fa-users-viewfinder"></i></a>
+        </li>
+        <li
+          class="hidden hover:bg-slate-200 rounded-lg py-2 flex-1 custom-md:block"
+        >
+          <a href="#"><i class="fa-solid fa-shop"></i></a>
+        </li>
+        <li class="fa-solid fa-bars hover:bg-slate-200 flex-1 rounded-lg py-2">
+          <a href="#"><i></i></a>
+        </li>
+      </ul>
+      <!-- info icon bar -->
+      <div class="info-bar flex gap-2 text-xl">
         <a href="">
-          <div class="mb-2 p-2 hover:bg-slate-200 rounded-lg flex gap-2 items-center ">
-            <img class="w-10 h-10 rounded-full" src="/facebook/assets/Avatar-2-e-wt5czA.jpg" alt="Avatar">
-            <span class="text-base">Jack Lee</span>
-          </div>
+          <span
+            class="w-10 h-10 rounded-full bg-slate-200 hover:bg-slate-300 grid place-content-center"
+          >
+            <i class="fa-solid fa-plus text-base"></i>
+          </span>
         </a>
         <a href="">
-          <div class="mb-2 p-2 hover:bg-slate-200 rounded-lg flex gap-2 items-center">
-            <img class="w-9 h-9 rounded-full" src="data:image/svg+xml,%3c?xml%20version='1.0'%20standalone='no'?%3e%3c!DOCTYPE%20svg%20PUBLIC%20'-//W3C//DTD%20SVG%201.1//EN'%20'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3e%3csvg%20t='1717873206247'%20class='icon'%20viewBox='0%200%201024%201024'%20version='1.1'%20xmlns='http://www.w3.org/2000/svg'%20p-id='1971'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20width='200'%20height='200'%3e%3cpath%20d='M627.305472%20113.777664c109.966336%200%20199.11168%2089.145344%20199.11168%20199.11168%200%2079.834112-46.98624%20148.69504-114.812928%20180.438016%20145.22368%2037.60128%20252.925952%20168.418304%20255.461376%20324.799488l0.04096%205.174272%200.004096%200.47104c0%2015.551488-12.481536%2028.188672-27.973632%2028.440576l-0.47104%200.003072h-625.77664l-0.47104-0.003072c-15.337472-0.248832-27.723776-12.637184-27.97056-27.97568l-0.003072-0.464896c0-159.58528%20109.5168-293.59104%20257.492992-330.960896l0.002048%200.012288c-67.252224-31.963136-113.74592-100.519936-113.74592-179.934208%200-109.96736%2089.145344-199.11168%20199.11168-199.11168z%20m-227.80928%2066.184192c9.293824%200%2018.41152%200.763904%2027.2896%202.233344-25.998336%2036.980736-41.25696%2082.055168-41.25696%20130.69312%200%2067.386368%2029.56288%20129.440768%2078.272512%20171.784192-123.870208%2053.94944-210.393088%20172.865536-220.93824%20310.651904l-105.381888%200.003072-0.392192-0.003072c-12.909568-0.20992-23.31136-10.740736-23.31136-23.70048%200-0.131072%200.001024-0.262144%200.003072-0.392192v0.19456l0.034816-4.45952c2.079744-129.62304%2090.866688-238.17728%20210.894848-270.19776l3.631104-0.94208-1.65888-0.800768c-55.139328-26.971136-93.11232-83.61984-93.11232-149.138432%200-91.63776%2074.287104-165.925888%20165.924864-165.925888z%20m-71.138304%20315.860992l-0.016384%200.003072%200.017408%200.008192-0.001024-0.011264z'%20fill='%231296db'%20p-id='1972'%3e%3c/path%3e%3c/svg%3e" alt="Avatar">
-            <span class="text-base">Friends</span>
-          </div>
+          <span
+            class="w-10 h-10 relative rounded-full bg-slate-200 hover:bg-slate-300 grid place-content-center"
+          >
+            <i class="fa-brands fa-facebook-messenger"></i>
+            <div
+              class="infos w-5 h-5 absolute -top-2 -right-2 bg-rose-600 rounded-full flex justify-center items-center"
+            >
+              <i class="count text-white text-sm roboto-regular">1</i>
+            </div>
+          </span>
         </a>
         <a href="">
-          <div class="mb-2 p-2 hover:bg-slate-200 rounded-lg flex gap-2 items-center">
-            <img class="w-9 h-9 rounded-full" src="data:image/svg+xml,%3c?xml%20version='1.0'%20standalone='no'?%3e%3c!DOCTYPE%20svg%20PUBLIC%20'-//W3C//DTD%20SVG%201.1//EN'%20'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3e%3csvg%20t='1717873509073'%20class='icon'%20viewBox='0%200%201024%201024'%20version='1.1'%20xmlns='http://www.w3.org/2000/svg'%20p-id='2619'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20width='200'%20height='200'%3e%3cpath%20d='M535.04%20737.024a164.8384%20164.8384%200%201%201%200%200.5888z%20m152.5248-82.4832v86.6048c0%200.64%200.5632%200.64%200.5632%201.2288l0.5888%200.5632c0%200.5888%200.5632%200.5888%200.5632%201.1776l0.5888%200.5888c0%200.5632%200%200.5632%200.5632%201.2032l0.5888%200.5888c0.6144%200%200.6144%200.5632%201.1776%200.5632l90.8032%2053.0432a10.88%2010.88%200%200%200%2015.0528-2.9952%209.8048%209.8048%200%200%200%200.64-1.1264%2013.2864%2013.2864%200%200%200-2.8928-16.4864l-84.992-49.5104v-75.4432a11.648%2011.648%200%200%200-23.2704%200zM211.712%20862.72a415.9488%20415.9488%200%200%201%201.664-72.96%20220.4672%20220.4672%200%200%201%2013.3376-57.1392A77.7728%2077.7728%200%200%201%20258.56%20692.0192c16.4864-9.3184%2030.9248-16.8448%2042.5216-22.912C332.8%20652.5952%20351.9488%20642.56%20362.4192%20624.64a18.176%2018.176%200%200%201%205.9904-5.6832%208.064%208.064%200%200%201-4.096-7.5008%2059.4688%2059.4688%200%200%200-0.6144-16.2304%2012.6464%2012.6464%200%200%201-0.9216-1.1264%2077.2864%2077.2864%200%200%201-8.064%200.384c-13.4656%200-30.72-3.2-36.6592-18.4064a187.264%20187.264%200%200%201-8.6016-26.1632%20143.7696%20143.7696%200%200%200-6.016-18.9184c-5.12-11.52-20.6592-89.9072-22.1184-98.6624a287.5904%20287.5904%200%200%201-0.896-32.5376%2071.9616%2071.9616%200%200%200-3.1744-14.8736%2061.2864%2061.2864%200%200%201-2.816-12.672c0.1792-1.9712%200.384-4.0448%200.7168-6.4-1.28%204.3008-2.56%205.2736-2.56%205.376a274.3552%20274.3552%200%200%200%201.536-46.3104c0-1.5616%200.2048-3.2%200.4608-5.12%200-3.1744%200.1792-5.632%200.3584-7.68-0.7168%201.28-1.28%201.92-1.536%201.92a0.4096%200.4096%200%200%201-0.2304%200c-0.3584-0.4096-0.3584-2.0736%200-5.12a109.9008%20109.9008%200%200%200-12.416-52.2752%2044.544%2044.544%200%200%200%208.4224%205.8368%2072.6016%2072.6016%200%200%201-15.7696-37.9648%2023.6544%2023.6544%200%200%200%2022.8864%2012.4928%2092.672%2092.672%200%200%200%2035.456-9.6512%20258.7904%20258.7904%200%200%201%2058.5728-41.4976%20173.056%20173.056%200%200%201%2078.6176-20.1984%20148.224%20148.224%200%200%201%2075.136%2020.7872%20188.7744%20188.7744%200%200%201%2072.0384%2070.9632c18.048%2048.896%2022.1952%2092.16%2012.3648%20128.8448a132.9408%20132.9408%200%200%201-43.52%2068.2752%20213.248%20213.248%200%200%201-14.4128%2020.48%2019.6096%2019.6096%200%200%201-15.0016%206.9632%2019.4048%2019.4048%200%200%201-11.2384-3.5584l-1.1776%202.1248c-0.1536%2024.1664%201.6896%2067.84%2015.8976%2088.6784a4.0192%204.0192%200%200%201-0.8192%205.4784c-5.12%203.84-10.624%207.68-15.9232%2011.1104l14.6688-1.6128h1.1008l0.128-0.1792a1.4336%201.4336%200%200%201%200.4352%200.2304c7.8592%204.3776%2015.6928%208.96%2020.864%2011.9808a198.8352%20198.8352%200%200%200-8.96%20266.752z'%20fill='%23D17614'%20p-id='2620'%3e%3c/path%3e%3c/svg%3e" alt="Avatar">
-            <span class="text-base">Memories</span>
-          </div>
+          <span
+            class="w-10 h-10 relative rounded-full bg-slate-200 hover:bg-slate-300 grid place-content-center"
+          >
+            <i class="fa-solid fa-bell"></i>
+            <div
+              class="infos w-5 h-5 absolute -top-2 -right-2 bg-rose-600 rounded-full flex justify-center items-center"
+            >
+              <i class="count text-white text-sm roboto-regular">3</i>
+            </div>
+          </span>
         </a>
         <a href="">
-          <div class="mb-2 p-2 hover:bg-slate-200 rounded-lg flex gap-2 items-center">
-            <img class="w-9 h-9 rounded-full" src="data:image/svg+xml,%3c?xml%20version='1.0'%20standalone='no'?%3e%3c!DOCTYPE%20svg%20PUBLIC%20'-//W3C//DTD%20SVG%201.1//EN'%20'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3e%3csvg%20t='1717873850314'%20class='icon'%20viewBox='0%200%201056%201024'%20version='1.1'%20xmlns='http://www.w3.org/2000/svg'%20p-id='1975'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20width='206.25'%20height='200'%3e%3cpath%20d='M160%200%20889.6%200%20889.6%201024%20524.8%20825.6%20160%201024Z'%20fill='%23d4237a'%20p-id='1976'%3e%3c/path%3e%3c/svg%3e" alt="Avatar">
-            <span class="text-base">Saved</span>
-          </div>
+          <img
+            class="w-10 h-10 rounded-full"
+            src="/facebook/assets/Avatar-2-e-wt5czA.jpg"
+            alt="Avatar"
+          />
         </a>
-        <a href="">
-          <div class="mb-2 p-2 hover:bg-slate-200 rounded-lg flex gap-2 items-center">
-            <img class="w-9 h-9 rounded-full" src="data:image/svg+xml,%3c?xml%20version='1.0'%20standalone='no'?%3e%3c!DOCTYPE%20svg%20PUBLIC%20'-//W3C//DTD%20SVG%201.1//EN'%20'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3e%3csvg%20t='1717873678250'%20class='icon'%20viewBox='0%200%201228%201024'%20version='1.1'%20xmlns='http://www.w3.org/2000/svg'%20p-id='2770'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20width='239.84375'%20height='200'%3e%3cpath%20d='M708.73088%20588.8c193.7408%200%20346.7264%20158.72%20346.7264%20348.16C1055.45728%20983.04%201014.66112%201024%20968.704%201024H254.93504c-45.8752%200-86.67136-40.96-86.67136-87.04%200-194.56%20152.94464-348.16%20346.7264-348.16zM382.40256%20471.04A268.61568%20268.61568%200%200%200%20453.8368%20532.48c-152.9856%2025.6-280.45312%20133.12-331.40736%20286.72h-56.1152C30.59712%20814.08%200%20783.36%200%20747.52c0-153.6%20122.38848-276.48%20275.33312-276.48z%20m571.06432%200c147.8656%200%20270.25408%20122.88%20275.33312%20281.6C1228.8%20788.48%201198.20288%20819.2%201162.52672%20819.2h-56.1152c-50.95424-153.6-178.42176-261.12-331.3664-286.72%2025.47712-20.48%2050.95424-35.84%2071.35232-61.44zM611.86048%200c142.7456%200%20254.93504%20112.64%20254.93504%20256s-112.18944%20256-254.93504%20256c-142.78656%200-254.93504-112.64-254.93504-256S469.07392%200%20611.86048%200zM351.80544%2010.24c15.31904%200%2035.71712%200%2050.9952%205.12C336.52736%2076.8%20295.7312%20163.84%20295.7312%20256c0%2056.32%2015.27808%20107.52%2040.79616%20153.6-96.8704-15.36-168.26368-92.16-173.38368-189.44C158.1056%20107.52%20244.736%2015.36%20351.8464%2010.24z%20m525.18912%200c96.8704%205.12%20173.34272%2076.8%20188.66176%20174.08%2015.27808%20107.52-61.19424%20209.92-173.38368%20225.28%2025.51808-46.08%2040.79616-102.4%2040.79616-153.6%200-92.16-40.79616-179.2-107.06944-240.64%2015.27808%200%2035.67616-5.12%2050.9952-5.12z'%20fill='%230091FF'%20p-id='2771'%3e%3c/path%3e%3c/svg%3e" alt="Avatar">
-            <span class="text-base">Groups</span>
+      </div>
+    </header>
+    <main class="custom-lg:flex justify-end custom-3xl: mx-auto">
+      <!-- sidebar left -->
+      <aside
+        class="aside-left sticky top-14 hidden custom-xl:block custom-3xl:mr-auto custom-4xl:mr-0 custom-4xl:ml-auto h-screen-minus-14 min-h-[890px] w-80 pl-2 pr-10 pt-4"
+      >
+        <!-- left top -->
+        <div>
+          <a href="">
+            <div
+              class="mb-2 p-2 hover:bg-slate-200 rounded-lg flex gap-2 items-center"
+            >
+              <img
+                class="w-10 h-10 rounded-full"
+                src="/facebook/assets/Avatar-2-e-wt5czA.jpg"
+                alt="Avatar"
+              />
+              <span class="text-base">Jack Lee</span>
+            </div>
+          </a>
+          <a href="">
+            <div
+              class="mb-2 p-2 hover:bg-slate-200 rounded-lg flex gap-2 items-center"
+            >
+              <img
+                class="w-9 h-9 rounded-full"
+                src="data:image/svg+xml,%3c?xml%20version='1.0'%20standalone='no'?%3e%3c!DOCTYPE%20svg%20PUBLIC%20'-//W3C//DTD%20SVG%201.1//EN'%20'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3e%3csvg%20t='1717873206247'%20class='icon'%20viewBox='0%200%201024%201024'%20version='1.1'%20xmlns='http://www.w3.org/2000/svg'%20p-id='1971'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20width='200'%20height='200'%3e%3cpath%20d='M627.305472%20113.777664c109.966336%200%20199.11168%2089.145344%20199.11168%20199.11168%200%2079.834112-46.98624%20148.69504-114.812928%20180.438016%20145.22368%2037.60128%20252.925952%20168.418304%20255.461376%20324.799488l0.04096%205.174272%200.004096%200.47104c0%2015.551488-12.481536%2028.188672-27.973632%2028.440576l-0.47104%200.003072h-625.77664l-0.47104-0.003072c-15.337472-0.248832-27.723776-12.637184-27.97056-27.97568l-0.003072-0.464896c0-159.58528%20109.5168-293.59104%20257.492992-330.960896l0.002048%200.012288c-67.252224-31.963136-113.74592-100.519936-113.74592-179.934208%200-109.96736%2089.145344-199.11168%20199.11168-199.11168z%20m-227.80928%2066.184192c9.293824%200%2018.41152%200.763904%2027.2896%202.233344-25.998336%2036.980736-41.25696%2082.055168-41.25696%20130.69312%200%2067.386368%2029.56288%20129.440768%2078.272512%20171.784192-123.870208%2053.94944-210.393088%20172.865536-220.93824%20310.651904l-105.381888%200.003072-0.392192-0.003072c-12.909568-0.20992-23.31136-10.740736-23.31136-23.70048%200-0.131072%200.001024-0.262144%200.003072-0.392192v0.19456l0.034816-4.45952c2.079744-129.62304%2090.866688-238.17728%20210.894848-270.19776l3.631104-0.94208-1.65888-0.800768c-55.139328-26.971136-93.11232-83.61984-93.11232-149.138432%200-91.63776%2074.287104-165.925888%20165.924864-165.925888z%20m-71.138304%20315.860992l-0.016384%200.003072%200.017408%200.008192-0.001024-0.011264z'%20fill='%231296db'%20p-id='1972'%3e%3c/path%3e%3c/svg%3e"
+                alt="Avatar"
+              />
+              <span class="text-base">Friends</span>
+            </div>
+          </a>
+          <a href="">
+            <div
+              class="mb-2 p-2 hover:bg-slate-200 rounded-lg flex gap-2 items-center"
+            >
+              <img
+                class="w-9 h-9 rounded-full"
+                src="data:image/svg+xml,%3c?xml%20version='1.0'%20standalone='no'?%3e%3c!DOCTYPE%20svg%20PUBLIC%20'-//W3C//DTD%20SVG%201.1//EN'%20'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3e%3csvg%20t='1717873509073'%20class='icon'%20viewBox='0%200%201024%201024'%20version='1.1'%20xmlns='http://www.w3.org/2000/svg'%20p-id='2619'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20width='200'%20height='200'%3e%3cpath%20d='M535.04%20737.024a164.8384%20164.8384%200%201%201%200%200.5888z%20m152.5248-82.4832v86.6048c0%200.64%200.5632%200.64%200.5632%201.2288l0.5888%200.5632c0%200.5888%200.5632%200.5888%200.5632%201.1776l0.5888%200.5888c0%200.5632%200%200.5632%200.5632%201.2032l0.5888%200.5888c0.6144%200%200.6144%200.5632%201.1776%200.5632l90.8032%2053.0432a10.88%2010.88%200%200%200%2015.0528-2.9952%209.8048%209.8048%200%200%200%200.64-1.1264%2013.2864%2013.2864%200%200%200-2.8928-16.4864l-84.992-49.5104v-75.4432a11.648%2011.648%200%200%200-23.2704%200zM211.712%20862.72a415.9488%20415.9488%200%200%201%201.664-72.96%20220.4672%20220.4672%200%200%201%2013.3376-57.1392A77.7728%2077.7728%200%200%201%20258.56%20692.0192c16.4864-9.3184%2030.9248-16.8448%2042.5216-22.912C332.8%20652.5952%20351.9488%20642.56%20362.4192%20624.64a18.176%2018.176%200%200%201%205.9904-5.6832%208.064%208.064%200%200%201-4.096-7.5008%2059.4688%2059.4688%200%200%200-0.6144-16.2304%2012.6464%2012.6464%200%200%201-0.9216-1.1264%2077.2864%2077.2864%200%200%201-8.064%200.384c-13.4656%200-30.72-3.2-36.6592-18.4064a187.264%20187.264%200%200%201-8.6016-26.1632%20143.7696%20143.7696%200%200%200-6.016-18.9184c-5.12-11.52-20.6592-89.9072-22.1184-98.6624a287.5904%20287.5904%200%200%201-0.896-32.5376%2071.9616%2071.9616%200%200%200-3.1744-14.8736%2061.2864%2061.2864%200%200%201-2.816-12.672c0.1792-1.9712%200.384-4.0448%200.7168-6.4-1.28%204.3008-2.56%205.2736-2.56%205.376a274.3552%20274.3552%200%200%200%201.536-46.3104c0-1.5616%200.2048-3.2%200.4608-5.12%200-3.1744%200.1792-5.632%200.3584-7.68-0.7168%201.28-1.28%201.92-1.536%201.92a0.4096%200.4096%200%200%201-0.2304%200c-0.3584-0.4096-0.3584-2.0736%200-5.12a109.9008%20109.9008%200%200%200-12.416-52.2752%2044.544%2044.544%200%200%200%208.4224%205.8368%2072.6016%2072.6016%200%200%201-15.7696-37.9648%2023.6544%2023.6544%200%200%200%2022.8864%2012.4928%2092.672%2092.672%200%200%200%2035.456-9.6512%20258.7904%20258.7904%200%200%201%2058.5728-41.4976%20173.056%20173.056%200%200%201%2078.6176-20.1984%20148.224%20148.224%200%200%201%2075.136%2020.7872%20188.7744%20188.7744%200%200%201%2072.0384%2070.9632c18.048%2048.896%2022.1952%2092.16%2012.3648%20128.8448a132.9408%20132.9408%200%200%201-43.52%2068.2752%20213.248%20213.248%200%200%201-14.4128%2020.48%2019.6096%2019.6096%200%200%201-15.0016%206.9632%2019.4048%2019.4048%200%200%201-11.2384-3.5584l-1.1776%202.1248c-0.1536%2024.1664%201.6896%2067.84%2015.8976%2088.6784a4.0192%204.0192%200%200%201-0.8192%205.4784c-5.12%203.84-10.624%207.68-15.9232%2011.1104l14.6688-1.6128h1.1008l0.128-0.1792a1.4336%201.4336%200%200%201%200.4352%200.2304c7.8592%204.3776%2015.6928%208.96%2020.864%2011.9808a198.8352%20198.8352%200%200%200-8.96%20266.752z'%20fill='%23D17614'%20p-id='2620'%3e%3c/path%3e%3c/svg%3e"
+                alt="Avatar"
+              />
+              <span class="text-base">Memories</span>
+            </div>
+          </a>
+          <a href="">
+            <div
+              class="mb-2 p-2 hover:bg-slate-200 rounded-lg flex gap-2 items-center"
+            >
+              <img
+                class="w-9 h-9 rounded-full"
+                src="data:image/svg+xml,%3c?xml%20version='1.0'%20standalone='no'?%3e%3c!DOCTYPE%20svg%20PUBLIC%20'-//W3C//DTD%20SVG%201.1//EN'%20'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3e%3csvg%20t='1717873850314'%20class='icon'%20viewBox='0%200%201056%201024'%20version='1.1'%20xmlns='http://www.w3.org/2000/svg'%20p-id='1975'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20width='206.25'%20height='200'%3e%3cpath%20d='M160%200%20889.6%200%20889.6%201024%20524.8%20825.6%20160%201024Z'%20fill='%23d4237a'%20p-id='1976'%3e%3c/path%3e%3c/svg%3e"
+                alt="Avatar"
+              />
+              <span class="text-base">Saved</span>
+            </div>
+          </a>
+          <a href="">
+            <div
+              class="mb-2 p-2 hover:bg-slate-200 rounded-lg flex gap-2 items-center"
+            >
+              <img
+                class="w-9 h-9 rounded-full"
+                src="data:image/svg+xml,%3c?xml%20version='1.0'%20standalone='no'?%3e%3c!DOCTYPE%20svg%20PUBLIC%20'-//W3C//DTD%20SVG%201.1//EN'%20'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3e%3csvg%20t='1717873678250'%20class='icon'%20viewBox='0%200%201228%201024'%20version='1.1'%20xmlns='http://www.w3.org/2000/svg'%20p-id='2770'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20width='239.84375'%20height='200'%3e%3cpath%20d='M708.73088%20588.8c193.7408%200%20346.7264%20158.72%20346.7264%20348.16C1055.45728%20983.04%201014.66112%201024%20968.704%201024H254.93504c-45.8752%200-86.67136-40.96-86.67136-87.04%200-194.56%20152.94464-348.16%20346.7264-348.16zM382.40256%20471.04A268.61568%20268.61568%200%200%200%20453.8368%20532.48c-152.9856%2025.6-280.45312%20133.12-331.40736%20286.72h-56.1152C30.59712%20814.08%200%20783.36%200%20747.52c0-153.6%20122.38848-276.48%20275.33312-276.48z%20m571.06432%200c147.8656%200%20270.25408%20122.88%20275.33312%20281.6C1228.8%20788.48%201198.20288%20819.2%201162.52672%20819.2h-56.1152c-50.95424-153.6-178.42176-261.12-331.3664-286.72%2025.47712-20.48%2050.95424-35.84%2071.35232-61.44zM611.86048%200c142.7456%200%20254.93504%20112.64%20254.93504%20256s-112.18944%20256-254.93504%20256c-142.78656%200-254.93504-112.64-254.93504-256S469.07392%200%20611.86048%200zM351.80544%2010.24c15.31904%200%2035.71712%200%2050.9952%205.12C336.52736%2076.8%20295.7312%20163.84%20295.7312%20256c0%2056.32%2015.27808%20107.52%2040.79616%20153.6-96.8704-15.36-168.26368-92.16-173.38368-189.44C158.1056%20107.52%20244.736%2015.36%20351.8464%2010.24z%20m525.18912%200c96.8704%205.12%20173.34272%2076.8%20188.66176%20174.08%2015.27808%20107.52-61.19424%20209.92-173.38368%20225.28%2025.51808-46.08%2040.79616-102.4%2040.79616-153.6%200-92.16-40.79616-179.2-107.06944-240.64%2015.27808%200%2035.67616-5.12%2050.9952-5.12z'%20fill='%230091FF'%20p-id='2771'%3e%3c/path%3e%3c/svg%3e"
+                alt="Avatar"
+              />
+              <span class="text-base">Groups</span>
+            </div>
+          </a>
+          <a href="">
+            <div
+              class="mb-2 p-2 hover:bg-slate-200 rounded-lg flex gap-2 items-center"
+            >
+              <img
+                class="w-9 h-9 rounded-full"
+                src="data:image/svg+xml,%3c?xml%20version='1.0'%20standalone='no'?%3e%3c!DOCTYPE%20svg%20PUBLIC%20'-//W3C//DTD%20SVG%201.1//EN'%20'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3e%3csvg%20t='1717873105119'%20class='icon'%20viewBox='0%200%201024%201024'%20version='1.1'%20xmlns='http://www.w3.org/2000/svg'%20p-id='2260'%20data-spm-anchor-id='a313x.manage_type_myprojects.0.i3.219b3a81YY1n9s'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20width='200'%20height='200'%3e%3cpath%20d='M512%2064C265.6%2064%2064%20265.6%2064%20512s201.6%20448%20448%20448%20448-201.6%20448-448S758.4%2064%20512%2064zM691.2%20544l-256%20156.8C428.8%20704%20422.4%20704%20416%20704c-6.4%200-9.6%200-16-3.2C390.4%20694.4%20384%20684.8%20384%20672L384%20352c0-12.8%206.4-22.4%2016-28.8%209.6-6.4%2022.4-6.4%2032%200l256%20166.4c9.6%206.4%2016%2016%2016%2028.8C704%20528%20700.8%20540.8%20691.2%20544z'%20p-id='2261'%20data-spm-anchor-id='a313x.manage_type_myprojects.0.i2.219b3a81YY1n9s'%20class='selected'%20fill='%231296db'%3e%3c/path%3e%3c/svg%3e"
+                alt="Avatar"
+              />
+              <span class="text-base">Video</span>
+            </div>
+          </a>
+          <a href="">
+            <div
+              class="mb-2 p-2 hover:bg-slate-200 rounded-lg flex gap-2 items-center"
+            >
+              <img
+                class="w-9 h-9 rounded-full"
+                src="data:image/svg+xml,%3c?xml%20version='1.0'%20standalone='no'?%3e%3c!DOCTYPE%20svg%20PUBLIC%20'-//W3C//DTD%20SVG%201.1//EN'%20'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3e%3csvg%20t='1717873164902'%20class='icon'%20viewBox='0%200%201024%201024'%20version='1.1'%20xmlns='http://www.w3.org/2000/svg'%20p-id='1969'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20width='200'%20height='200'%3e%3cpath%20d='M154.416597%2097.316225h729.151281L1006.552664%20329.060847c7.785298%2016.580597%2012.159923%2035.132078%2012.159923%2054.691513%200%2071.128848-57.671375%20128.800224-128.800223%20128.800224-61.900692%200-113.612344-43.685878-125.964648-101.886301-12.399376%2058.200424-64.063957%20101.886301-125.965672%20101.886301s-113.612344-43.685878-125.964648-101.934396c-12.387097%2058.248519-64.099772%20101.934397-126.000464%20101.934396-61.901715%200-113.589831-43.685878-125.964648-101.886301-12.351281%2058.200424-64.063957%20101.886301-125.964648%20101.886301-71.127825%200-128.800224-57.671375-128.800223-128.800224%200-19.560459%204.372579-38.110917%2012.1589-54.691513L154.416597%2097.316225zM927.253755%20557.537035v320.029164c0%2027.010113-22.107463%2049.117576-49.117576%2049.117576H145.862797c-27.010113%200-49.093017-22.107463-49.093016-49.117576V557.537035h97.801271v162.441348h634.833337V557.537035h97.849366z'%20fill='%231296db'%20p-id='1970'%3e%3c/path%3e%3c/svg%3e"
+                alt="Avatar"
+              />
+              <span class="text-base">Marketplace</span>
+            </div>
+          </a>
+          <a href="">
+            <div
+              class="mb-2 p-2 hover:bg-slate-200 rounded-lg flex gap-2 items-center"
+            >
+              <img
+                class="w-9 h-9 rounded-full"
+                src="data:image/svg+xml,%3c?xml%20version='1.0'%20standalone='no'?%3e%3c!DOCTYPE%20svg%20PUBLIC%20'-//W3C//DTD%20SVG%201.1//EN'%20'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3e%3csvg%20t='1717873222734'%20class='icon'%20viewBox='0%200%201024%201024'%20version='1.1'%20xmlns='http://www.w3.org/2000/svg'%20p-id='2124'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20width='200'%20height='200'%3e%3cpath%20d='M810.666667%20298.666667a64%2064%200%200%201%2064%2064v426.666666a64%2064%200%200%201-64%2064l-81.130667%200.021334a127.274667%20127.274667%200%200%200%2016.981333-57.706667L746.666667%20789.333333V298.666667h64z%20m-170.666667-128a64%2064%200%200%201%2064%2064v554.666666a64%2064%200%200%201-64%2064H213.333333a64%2064%200%200%201-64-64V234.666667a64%2064%200%200%201%2064-64h426.666667z%20m-192%20320h-170.666667v64h170.666667v-64z%20m128-128H277.333333v64h298.666667v-64z'%20fill='%23FFC300'%20p-id='2125'%3e%3c/path%3e%3c/svg%3e"
+                alt="Avatar"
+              />
+              <span class="text-base">Feeds</span>
+            </div>
+          </a>
+          <a href="">
+            <div
+              class="mb-2 p-2 pb-4 hover:bg-slate-200 flex gap-2 items-center border-b border-neutral-400"
+            >
+              <span
+                class="w-10 h-10 rounded-full bg-slate-300 grid place-content-center"
+              >
+                <i class="fa-solid fa-angle-down"></i>
+              </span>
+              <span class="text-base">See more</span>
+            </div>
+          </a>
+        </div>
+
+        <!-- left down side -->
+        <div>
+          <!-- Your shortcuts -->
+          <div>
+            <div class="mb-2 p-2 text-lg text-neutral-500">
+              <span>Your shortcuts</span>
+            </div>
+            <a href="">
+              <div
+                class="mb-2 p-2 hover:bg-slate-200 rounded-lg flex gap-2 items-center"
+              >
+                <img
+                  class="w-10 h-10 rounded-lg"
+                  src="/facebook/assets/shortcut-1-C7EU__lB.jpeg"
+                  alt="Avatar"
+                />
+                <span class="text-base">chatting</span>
+              </div>
+            </a>
+            <a href="">
+              <div
+                class="mb-2 p-2 hover:bg-slate-200 rounded-lg flex gap-2 items-center"
+              >
+                <img
+                  class="w-10 h-10 rounded-lg"
+                  src="/facebook/assets/shortcut-2-BQUPmTyx.jpeg"
+                  alt="Avatar"
+                />
+                <span class="text-base">OneSee-Media</span>
+              </div>
+            </a>
+            <a href="">
+              <div
+                class="mb-2 p-2 hover:bg-slate-200 rounded-lg flex gap-2 items-center"
+              >
+                <img
+                  class="w-10 h-10 rounded-lg"
+                  src="/facebook/assets/shortcut-3-C0GC3NT5.jpeg"
+                  alt="Avatar"
+                />
+                <span class="text-base">Hero Wars</span>
+              </div>
+            </a>
           </div>
-        </a>
-        <a href="">
-          <div class="mb-2 p-2 hover:bg-slate-200 rounded-lg flex gap-2 items-center">
-            <img class="w-9 h-9 rounded-full" src="data:image/svg+xml,%3c?xml%20version='1.0'%20standalone='no'?%3e%3c!DOCTYPE%20svg%20PUBLIC%20'-//W3C//DTD%20SVG%201.1//EN'%20'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3e%3csvg%20t='1717873105119'%20class='icon'%20viewBox='0%200%201024%201024'%20version='1.1'%20xmlns='http://www.w3.org/2000/svg'%20p-id='2260'%20data-spm-anchor-id='a313x.manage_type_myprojects.0.i3.219b3a81YY1n9s'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20width='200'%20height='200'%3e%3cpath%20d='M512%2064C265.6%2064%2064%20265.6%2064%20512s201.6%20448%20448%20448%20448-201.6%20448-448S758.4%2064%20512%2064zM691.2%20544l-256%20156.8C428.8%20704%20422.4%20704%20416%20704c-6.4%200-9.6%200-16-3.2C390.4%20694.4%20384%20684.8%20384%20672L384%20352c0-12.8%206.4-22.4%2016-28.8%209.6-6.4%2022.4-6.4%2032%200l256%20166.4c9.6%206.4%2016%2016%2016%2028.8C704%20528%20700.8%20540.8%20691.2%20544z'%20p-id='2261'%20data-spm-anchor-id='a313x.manage_type_myprojects.0.i2.219b3a81YY1n9s'%20class='selected'%20fill='%231296db'%3e%3c/path%3e%3c/svg%3e" alt="Avatar">
-            <span class="text-base">Video</span>
+          <!-- Privacy -->
+          <p
+            class="absolute bottom-3 left-4 w-[256px] text-sm text-neutral-500"
+          >
+            Privacy · Imprint/Terms · UrhDaG/MStV · Advertising · Ad Choices ·
+            Cookies · More · Meta © 2024
+          </p>
+        </div>
+      </aside>
+      <!-- middle part -->
+      <div
+        class="middle max-w-[700px] custom-md:mx-auto custom-lg-1:w-96 custom-lg:flex-1 custom-lg:mx-0 custom-lg:ml-8 custom-xl:ml-0 custom-2xl: w-[700px]"
+      >
+        <!-- friend's latest sharing-->
+        <section class="my-6">
+          <div class="w-full h-full relative flex items-center justify-center">
+            <!-- prev button -->
+            <button
+              aria-label="slide backward"
+              class="hover:bg-white cursor-pointer absolute z-10 left-0 ml-10 w-12 h-12 rounded-full bg-slate-200 grid place-content-center"
+              id="prev"
+            >
+              <svg
+                class="dark:text-gray-900 text-neutral-500 scale-125"
+                width="8"
+                height="14"
+                viewBox="0 0 8 14"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M7 1L1 7L7 13"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+
+            <!-- carousel -->
+            <div
+              class="w-full h-full mx-auto overflow-x-hidden overflow-y-hidden"
+            >
+              <div
+                id="slider"
+                class="slider flex gap-2 items-center justify-start transition ease-out duration-700 overflow-hidden"
+              >
+                <div
+                  class="relative h-64 min-w-36 rounded-xl border border-slate-400 overflow-hidden"
+                >
+                  <img
+                    class="hover:scale-105 transition ease-out duration-300 h-full w-36"
+                    src="/facebook/assets/Avatar-2-Vertical-BiY0JfiU.jpg"
+                    alt="Avatar"
+                    class="object-cover object-center w-full"
+                  />
+                  <h3
+                    class="w-full h-14 text-center pt-4 bg-white absolute bottom-0 text-base font-semibold leading-10 dark:text-gray-900"
+                  >
+                    Creat story
+                    <span
+                      class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-blue-600 text-white border-4 border-white grid place-content-center"
+                    >
+                      <i class="fa-solid fa-plus text-base"></i>
+                    </span>
+                  </h3>
+                </div>
+
+                <div class="relative h-64 min-w-36 rounded-xl overflow-hidden">
+                  <img
+                    class="h-full w-36 hover:scale-105 transition ease-out duration-300"
+                    src="https://i.ibb.co/DWrGxX6/carosel-2.png"
+                    alt="black chair and white table"
+                    class="object-cover object-center w-full"
+                  />
+                  <h3
+                    class="absolute bottom-2 left-2 text-sm font-semibold leading-5 text-white dark:text-gray-900"
+                  >
+                    Life's Canvas
+                  </h3>
+                  <img
+                    class="w-10 h-10 absolute top-4 left-4 rounded-full border-4 border-blue-600"
+                    src="/facebook/assets/friend-ava-1-YsZSxGZD.jpeg"
+                    alt=""
+                  />
+                </div>
+                <div class="relative h-64 min-w-36 rounded-xl overflow-hidden">
+                  <img
+                    class="h-full w-36 hover:scale-105 transition ease-out duration-300"
+                    src="https://i.ibb.co/DWrGxX6/carosel-2.png"
+                    alt="black chair and white table"
+                    class="object-cover object-center w-full"
+                  />
+                  <h3
+                    class="absolute bottom-2 left-2 text-sm font-semibold leading-5 text-white dark:text-gray-900"
+                  >
+                    Life's Canvas
+                  </h3>
+                  <img
+                    class="w-10 h-10 absolute top-4 left-4 rounded-full border-4 border-blue-600"
+                    src="/facebook/assets/friend-ava-1-YsZSxGZD.jpeg"
+                    alt=""
+                  />
+                </div>
+                <div class="relative h-64 min-w-36 rounded-xl overflow-hidden">
+                  <img
+                    class="h-full w-36 hover:scale-105 transition ease-out duration-300"
+                    src="https://i.ibb.co/DWrGxX6/carosel-2.png"
+                    alt="black chair and white table"
+                    class="object-cover object-center w-full"
+                  />
+                  <h3
+                    class="absolute bottom-2 left-2 text-sm font-semibold leading-5 text-white dark:text-gray-900"
+                  >
+                    Life's Canvas
+                  </h3>
+                  <img
+                    class="w-10 h-10 absolute top-4 left-4 rounded-full border-4 border-blue-600"
+                    src="/facebook/assets/friend-ava-1-YsZSxGZD.jpeg"
+                    alt=""
+                  />
+                </div>
+                <div class="relative h-64 min-w-36 rounded-xl overflow-hidden">
+                  <img
+                    class="h-full w-36 hover:scale-105 transition ease-out duration-300"
+                    src="https://i.ibb.co/DWrGxX6/carosel-2.png"
+                    alt="black chair and white table"
+                    class="object-cover object-center w-full"
+                  />
+                  <h3
+                    class="absolute bottom-2 left-2 text-sm font-semibold leading-5 text-white dark:text-gray-900"
+                  >
+                    Life's Canvas
+                  </h3>
+                  <img
+                    class="w-10 h-10 absolute top-4 left-4 rounded-full border-4 border-blue-600"
+                    src="/facebook/assets/friend-ava-1-YsZSxGZD.jpeg"
+                    alt=""
+                  />
+                </div>
+                <div class="relative h-64 min-w-36 rounded-xl overflow-hidden">
+                  <img
+                    class="h-full w-36 hover:scale-105 transition ease-out duration-300"
+                    src="https://i.ibb.co/DWrGxX6/carosel-2.png"
+                    alt="black chair and white table"
+                    class="object-cover object-center w-full"
+                  />
+                  <h3
+                    class="absolute bottom-2 left-2 text-sm font-semibold leading-5 text-white dark:text-gray-900"
+                  >
+                    Life's Canvas
+                  </h3>
+                  <img
+                    class="w-10 h-10 absolute top-4 left-4 rounded-full border-4 border-blue-600"
+                    src="/facebook/assets/friend-ava-1-YsZSxGZD.jpeg"
+                    alt=""
+                  />
+                </div>
+                <div class="relative h-64 min-w-36 rounded-xl overflow-hidden">
+                  <img
+                    class="h-full w-36 hover:scale-105 transition ease-out duration-300"
+                    src="https://i.ibb.co/DWrGxX6/carosel-2.png"
+                    alt="black chair and white table"
+                    class="object-cover object-center w-full"
+                  />
+                  <h3
+                    class="absolute bottom-2 left-2 text-sm font-semibold leading-5 text-white dark:text-gray-900"
+                  >
+                    Life's Canvas
+                  </h3>
+                  <img
+                    class="w-10 h-10 absolute top-4 left-4 rounded-full border-4 border-blue-600"
+                    src="/facebook/assets/friend-ava-1-YsZSxGZD.jpeg"
+                    alt=""
+                  />
+                </div>
+                <div class="relative h-64 min-w-36 rounded-xl overflow-hidden">
+                  <img
+                    class="h-full w-36 hover:scale-105 transition ease-out duration-300"
+                    src="https://i.ibb.co/DWrGxX6/carosel-2.png"
+                    alt="black chair and white table"
+                    class="object-cover object-center w-full"
+                  />
+                  <h3
+                    class="absolute bottom-2 left-2 text-sm font-semibold leading-5 text-white dark:text-gray-900"
+                  >
+                    Life's Canvas
+                  </h3>
+                  <img
+                    class="w-10 h-10 absolute top-4 left-4 rounded-full border-4 border-blue-600"
+                    src="/facebook/assets/friend-ava-1-YsZSxGZD.jpeg"
+                    alt=""
+                  />
+                </div>
+                <div class="relative h-64 min-w-36 rounded-xl overflow-hidden">
+                  <img
+                    class="h-full w-36 hover:scale-105 transition ease-out duration-300"
+                    src="https://i.ibb.co/DWrGxX6/carosel-2.png"
+                    alt="black chair and white table"
+                    class="object-cover object-center w-full"
+                  />
+                  <h3
+                    class="absolute bottom-2 left-2 text-sm font-semibold leading-5 text-white dark:text-gray-900"
+                  >
+                    Life's Canvas
+                  </h3>
+                  <img
+                    class="w-10 h-10 absolute top-4 left-4 rounded-full border-4 border-blue-600"
+                    src="/facebook/assets/friend-ava-1-YsZSxGZD.jpeg"
+                    alt=""
+                  />
+                </div>
+                <div class="relative h-64 min-w-36 rounded-xl overflow-hidden">
+                  <img
+                    class="h-full w-36 hover:scale-105 transition ease-out duration-300"
+                    src="https://i.ibb.co/DWrGxX6/carosel-2.png"
+                    alt="black chair and white table"
+                    class="object-cover object-center w-full"
+                  />
+                  <h3
+                    class="absolute bottom-2 left-2 text-sm font-semibold leading-5 text-white dark:text-gray-900"
+                  >
+                    Life's Canvas
+                  </h3>
+                  <img
+                    class="w-10 h-10 absolute top-4 left-4 rounded-full border-4 border-blue-600"
+                    src="/facebook/assets/friend-ava-1-YsZSxGZD.jpeg"
+                    alt=""
+                  />
+                </div>
+                <div class="relative h-64 min-w-36 rounded-xl overflow-hidden">
+                  <img
+                    class="h-full w-36 hover:scale-105 transition ease-out duration-300"
+                    src="https://i.ibb.co/DWrGxX6/carosel-2.png"
+                    alt="black chair and white table"
+                    class="object-cover object-center w-full"
+                  />
+                  <h3
+                    class="absolute bottom-2 left-2 text-sm font-semibold leading-5 text-white dark:text-gray-900"
+                  >
+                    Life's Canvas
+                  </h3>
+                  <img
+                    class="w-10 h-10 absolute top-4 left-4 rounded-full border-4 border-blue-600"
+                    src="/facebook/assets/friend-ava-1-YsZSxGZD.jpeg"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+
+            <!-- next button -->
+            <button
+              aria-label="slide forward"
+              class="hover:bg-white w-12 h-12 rounded-full bg-slate-200 cursor-pointer absolute z-10 right-0 mr-10 grid place-content-center"
+              id="next"
+            >
+              <svg
+                class="dark:text-gray-900 text-neutral-500 scale-125"
+                width="8"
+                height="14"
+                viewBox="0 0 8 14"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1 1L7 7L1 13"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
           </div>
-        </a>
-        <a href="">
-          <div class="mb-2 p-2 hover:bg-slate-200 rounded-lg flex gap-2 items-center">
-            <img class="w-9 h-9 rounded-full" src="data:image/svg+xml,%3c?xml%20version='1.0'%20standalone='no'?%3e%3c!DOCTYPE%20svg%20PUBLIC%20'-//W3C//DTD%20SVG%201.1//EN'%20'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3e%3csvg%20t='1717873164902'%20class='icon'%20viewBox='0%200%201024%201024'%20version='1.1'%20xmlns='http://www.w3.org/2000/svg'%20p-id='1969'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20width='200'%20height='200'%3e%3cpath%20d='M154.416597%2097.316225h729.151281L1006.552664%20329.060847c7.785298%2016.580597%2012.159923%2035.132078%2012.159923%2054.691513%200%2071.128848-57.671375%20128.800224-128.800223%20128.800224-61.900692%200-113.612344-43.685878-125.964648-101.886301-12.399376%2058.200424-64.063957%20101.886301-125.965672%20101.886301s-113.612344-43.685878-125.964648-101.934396c-12.387097%2058.248519-64.099772%20101.934397-126.000464%20101.934396-61.901715%200-113.589831-43.685878-125.964648-101.886301-12.351281%2058.200424-64.063957%20101.886301-125.964648%20101.886301-71.127825%200-128.800224-57.671375-128.800223-128.800224%200-19.560459%204.372579-38.110917%2012.1589-54.691513L154.416597%2097.316225zM927.253755%20557.537035v320.029164c0%2027.010113-22.107463%2049.117576-49.117576%2049.117576H145.862797c-27.010113%200-49.093017-22.107463-49.093016-49.117576V557.537035h97.801271v162.441348h634.833337V557.537035h97.849366z'%20fill='%231296db'%20p-id='1970'%3e%3c/path%3e%3c/svg%3e" alt="Avatar">
-            <span class="text-base">Marketplace</span>
+        </section>
+
+        <!-- my-blog -->
+        <section
+          class="px-4 bg-white rounded-lg my-4 shadow-[0_2px_2px_rgba(0,0,0,0.1)]"
+        >
+          <!-- top hafl -->
+          <div
+            class="py-3 w-full flex items-center gap-2 border-b border-neutral-400"
+          >
+            <img
+              class="w-10 h-10 rounded-full"
+              src="/facebook/assets/Avatar-2-e-wt5czA.jpg"
+              alt="Avatar"
+            />
+            <button
+              class="flex-1 p-2 rounded-full bg-slate-200 hover:bg-slate-300 text-neutral-500 text-left"
+              type="button"
+            >
+              What's on your mind, xxx?
+            </button>
           </div>
-        </a>
-        <a href="">
-          <div class="mb-2 p-2 hover:bg-slate-200 rounded-lg flex gap-2 items-center">
-            <img class="w-9 h-9 rounded-full" src="data:image/svg+xml,%3c?xml%20version='1.0'%20standalone='no'?%3e%3c!DOCTYPE%20svg%20PUBLIC%20'-//W3C//DTD%20SVG%201.1//EN'%20'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3e%3csvg%20t='1717873222734'%20class='icon'%20viewBox='0%200%201024%201024'%20version='1.1'%20xmlns='http://www.w3.org/2000/svg'%20p-id='2124'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20width='200'%20height='200'%3e%3cpath%20d='M810.666667%20298.666667a64%2064%200%200%201%2064%2064v426.666666a64%2064%200%200%201-64%2064l-81.130667%200.021334a127.274667%20127.274667%200%200%200%2016.981333-57.706667L746.666667%20789.333333V298.666667h64z%20m-170.666667-128a64%2064%200%200%201%2064%2064v554.666666a64%2064%200%200%201-64%2064H213.333333a64%2064%200%200%201-64-64V234.666667a64%2064%200%200%201%2064-64h426.666667z%20m-192%20320h-170.666667v64h170.666667v-64z%20m128-128H277.333333v64h298.666667v-64z'%20fill='%23FFC300'%20p-id='2125'%3e%3c/path%3e%3c/svg%3e" alt="Avatar">
-            <span class="text-base">Feeds</span>
+          <!-- bottom half -->
+          <div
+            class="grid grid-cols-3 place-content-center place-items-center text-neutral-500 text-base py-4"
+          >
+            <div
+              class="w-full cursor-pointer flex justify-center items-center gap-2 py-2 hover:bg-slate-200 px-4 rounded-lg"
+            >
+              <i class="fa-solid fa-video text-2xl text-pink-600"></i>
+              <span>Live video</span>
+            </div>
+            <div
+              class="w-full cursor-pointer flex justify-center items-center gap-2 py-2 hover:bg-slate-200 px-4 rounded-lg"
+            >
+              <i class="fa-solid fa-photo-film text-2xl text-green-600"></i>
+              <span>Photo/video</span>
+            </div>
+            <div
+              class="w-full cursor-pointer flex justify-center items-center gap-2 py-2 hover:bg-slate-200 px-4 rounded-lg"
+            >
+              <i class="fa-regular fa-face-smile text-2xl text-yellow-500"></i>
+              <span>Feeling/activity</span>
+            </div>
           </div>
-        </a>
-        <a href="">
-          <div class="mb-2 p-2 pb-4 hover:bg-slate-200  flex gap-2 items-center  border-b border-neutral-400">
-            <span class="w-10 h-10 rounded-full bg-slate-300 grid place-content-center">
-              <i class="fa-solid fa-angle-down"></i>
+        </section>
+        <!-- friends-blogs-1 -->
+        <section
+          class="friends-blog blog1 bg-white rounded-lg my-4 shadow-[0_2px_2px_rgba(0,0,0,0.1)]"
+        >
+          <!-- friends-blog-header -->
+          <header
+            class="flex justify-between items-center py-3 px-4 text-neutral-500"
+          >
+            <!-- name and avatar -->
+            <div class="flex items-center gap-2">
+              <img
+                class="w-10 h-10 rounded-full object-cover"
+                src="/facebook/assets/shanhai-D8ahm0Jd.jpg"
+                alt="Avatar"
+              />
+              <div>
+                <p class="text-black">山海有名</p>
+                <div class="text-sm">
+                  <span>March 31 at 8:54 AM</span>
+                  <i class="fa-solid fa-earth-americas"></i>
+                </div>
+              </div>
+            </div>
+            <!-- icon:three points and icon:closing -->
+            <div class="text-2xl">
+              <i class="fa-solid fa-ellipsis mx-3"></i>
+              <i class="fa-solid fa-xmark"></i>
+            </div>
+          </header>
+          <!-- blog content -->
+          <div>
+            <p class="px-4 pb-3">
+              春日徽州。從此以後，桃源在我心裏有了具體的樣子。
+            </p>
+            <!-- new page of friends' blog -->
+            <div class="bg-[#84C5D6]">
+              <a
+                href="https://www.facebook.com/photo?fbid=634458812690969&set=a.120247160778806"
+                ><img
+                  class="w-2/3 mx-auto"
+                  src="/facebook/assets/shanhai-blog-BSahmibn.jpg"
+                  alt="Shanhai"
+              /></a>
+            </div>
+          </div>
+          <!-- comments -->
+          <!-- like counts -->
+          <div
+            class="info-bar flex items-center gap-2 text-xl px-4 py-2 border-b border-neutral-400"
+          >
+            <span
+              class="w-5 h-5 rounded-full bg-blue-600 grid place-content-center"
+            >
+              <i class="fa-solid fa-thumbs-up text-xs text-white"></i>
             </span>
-            <span class="text-base">See more</span>
-          </div>
-        </a>
-      </div>
-
-      <!-- left down side -->
-      <div>
-        <!-- Your shortcuts -->
-        <div>
-          <div class="mb-2 p-2 text-lg text-neutral-500">
-            <span>Your shortcuts</span>
-          </div>
-          <a href="">
-            <div class="mb-2 p-2 hover:bg-slate-200 rounded-lg flex gap-2 items-center">
-              <img class="w-10 h-10 rounded-lg" src="/facebook/assets/shortcut-1-C7EU__lB.jpeg" alt="Avatar">
-              <span class="text-base">chatting</span>
-            </div>
-          </a>
-          <a href="">
-            <div class="mb-2 p-2 hover:bg-slate-200 rounded-lg flex gap-2 items-center">
-              <img class="w-10 h-10 rounded-lg" src="/facebook/assets/shortcut-2-BQUPmTyx.jpeg" alt="Avatar">
-              <span class="text-base">OneSee-Media</span>
-            </div>
-          </a>
-          <a href="">
-            <div class="mb-2 p-2 hover:bg-slate-200 rounded-lg flex gap-2 items-center">
-              <img class="w-10 h-10 rounded-lg" src="/facebook/assets/shortcut-3-C0GC3NT5.jpeg" alt="Avatar">
-              <span class="text-base">Hero Wars</span>
-            </div>
-          </a>
-        </div>
-        <!-- Privacy -->
-        <p class="absolute bottom-3 left-4 w-[256px] text-sm text-neutral-500">Privacy · Imprint/Terms · UrhDaG/MStV ·
-          Advertising · Ad Choices · Cookies · More · Meta © 2024</p>
-      </div>
-
-    </aside>
-    <!-- middle part -->
-    <div class="
-    middle
-    max-w-[700px]
-    custom-md:mx-auto
-    custom-lg-1:w-96
-    custom-lg:flex-1 custom-lg:mx-0 custom-lg:ml-8
-    custom-xl:ml-0
-    custom-2xl: w-[700px]
-   
-    ">
-      <!-- friend's latest sharing-->
-      <section class="my-6">
-        <div class="w-full h-full relative flex items-center justify-center">
-          <!-- prev button -->
-          <button aria-label="slide backward"
-            class="hover:bg-white  cursor-pointer absolute z-10 left-0 ml-10 w-12 h-12 rounded-full bg-slate-200 grid place-content-center"
-            id="prev">
-            <svg class="dark:text-gray-900 text-neutral-500 scale-125" width="8" height="14" viewBox="0 0 8 14"
-              fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M7 1L1 7L7 13" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                stroke-linejoin="round" />
-            </svg>
-          </button>
-
-          <!-- carousel -->
-          <div class="w-full h-full mx-auto overflow-x-hidden overflow-y-hidden">
-            <div id="slider"
-              class="slider flex gap-2 items-center justify-start transition ease-out duration-700 overflow-hidden">
-              <div class="relative  h-64 min-w-36 rounded-xl border border-slate-400 overflow-hidden">
-                <img class="hover:scale-105 transition ease-out duration-300 h-full w-36"
-                  src="/facebook/assets/Avatar-2-Vertical-BiY0JfiU.jpg" alt="Avatar" class="object-cover object-center w-full" />
-                <h3
-                  class="w-full h-14 text-center pt-4 bg-white absolute bottom-0 text-base  font-semibold leading-10 dark:text-gray-900">
-                  Creat story
-                  <span
-                    class="absolute  top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-10 h-10 rounded-full bg-blue-600 text-white border-4 border-white grid place-content-center">
-                    <i class="fa-solid fa-plus text-base"></i>
-                  </span>
-                </h3>
-              </div>
-
-              <div class="relative h-64 min-w-36 rounded-xl overflow-hidden">
-                <img class="h-full w-36 hover:scale-105 transition ease-out duration-300"
-                  src="https://i.ibb.co/DWrGxX6/carosel-2.png" alt="black chair and white table"
-                  class="object-cover object-center w-full" />
-                <h3 class="absolute bottom-2 left-2 text-sm font-semibold leading-5 text-white dark:text-gray-900">
-                  Life's Canvas</h3>
-                <img class="w-10 h-10 absolute top-4 left-4 rounded-full border-4 border-blue-600"
-                  src="/facebook/assets/friend-ava-1-YsZSxGZD.jpeg" alt="">
-              </div>
-              <div class="relative h-64 min-w-36 rounded-xl overflow-hidden">
-                <img class="h-full w-36 hover:scale-105 transition ease-out duration-300"
-                  src="https://i.ibb.co/DWrGxX6/carosel-2.png" alt="black chair and white table"
-                  class="object-cover object-center w-full" />
-                <h3 class="absolute bottom-2 left-2 text-sm font-semibold leading-5 text-white dark:text-gray-900">
-                  Life's Canvas</h3>
-                <img class="w-10 h-10 absolute top-4 left-4 rounded-full border-4 border-blue-600"
-                  src="/facebook/assets/friend-ava-1-YsZSxGZD.jpeg" alt="">
-              </div>
-              <div class="relative h-64 min-w-36 rounded-xl overflow-hidden">
-                <img class="h-full w-36 hover:scale-105 transition ease-out duration-300"
-                  src="https://i.ibb.co/DWrGxX6/carosel-2.png" alt="black chair and white table"
-                  class="object-cover object-center w-full" />
-                <h3 class="absolute bottom-2 left-2 text-sm font-semibold leading-5 text-white dark:text-gray-900">
-                  Life's Canvas</h3>
-                <img class="w-10 h-10 absolute top-4 left-4 rounded-full border-4 border-blue-600"
-                  src="/facebook/assets/friend-ava-1-YsZSxGZD.jpeg" alt="">
-              </div>
-              <div class="relative h-64 min-w-36 rounded-xl overflow-hidden">
-                <img class="h-full w-36 hover:scale-105 transition ease-out duration-300"
-                  src="https://i.ibb.co/DWrGxX6/carosel-2.png" alt="black chair and white table"
-                  class="object-cover object-center w-full" />
-                <h3 class="absolute bottom-2 left-2 text-sm font-semibold leading-5 text-white dark:text-gray-900">
-                  Life's Canvas</h3>
-                <img class="w-10 h-10 absolute top-4 left-4 rounded-full border-4   border-blue-600"
-                  src="/facebook/assets/friend-ava-1-YsZSxGZD.jpeg" alt="">
-              </div>
-              <div class="relative h-64 min-w-36 rounded-xl overflow-hidden">
-                <img class="h-full w-36 hover:scale-105 transition ease-out duration-300"
-                  src="https://i.ibb.co/DWrGxX6/carosel-2.png" alt="black chair and white table"
-                  class="object-cover object-center w-full" />
-                <h3 class="absolute bottom-2 left-2 text-sm font-semibold leading-5 text-white dark:text-gray-900">
-                  Life's Canvas</h3>
-                <img class="w-10 h-10 absolute top-4 left-4 rounded-full border-4   border-blue-600"
-                  src="/facebook/assets/friend-ava-1-YsZSxGZD.jpeg" alt="">
-              </div>
-              <div class="relative h-64 min-w-36 rounded-xl overflow-hidden">
-                <img class="h-full w-36 hover:scale-105 transition ease-out duration-300"
-                  src="https://i.ibb.co/DWrGxX6/carosel-2.png" alt="black chair and white table"
-                  class="object-cover object-center w-full" />
-                <h3 class="absolute bottom-2 left-2 text-sm font-semibold leading-5 text-white dark:text-gray-900">
-                  Life's Canvas</h3>
-                <img class="w-10 h-10 absolute top-4 left-4 rounded-full border-4   border-blue-600"
-                  src="/facebook/assets/friend-ava-1-YsZSxGZD.jpeg" alt="">
-              </div>
-              <div class="relative h-64 min-w-36 rounded-xl overflow-hidden">
-                <img class="h-full w-36 hover:scale-105 transition ease-out duration-300"
-                  src="https://i.ibb.co/DWrGxX6/carosel-2.png" alt="black chair and white table"
-                  class="object-cover object-center w-full" />
-                <h3 class="absolute bottom-2 left-2 text-sm font-semibold leading-5 text-white dark:text-gray-900">
-                  Life's Canvas</h3>
-                <img class="w-10 h-10 absolute top-4 left-4 rounded-full border-4   border-blue-600"
-                  src="/facebook/assets/friend-ava-1-YsZSxGZD.jpeg" alt="">
-              </div>
-              <div class="relative h-64 min-w-36 rounded-xl overflow-hidden">
-                <img class="h-full w-36 hover:scale-105 transition ease-out duration-300"
-                  src="https://i.ibb.co/DWrGxX6/carosel-2.png" alt="black chair and white table"
-                  class="object-cover object-center w-full" />
-                <h3 class="absolute bottom-2 left-2 text-sm font-semibold leading-5 text-white dark:text-gray-900">
-                  Life's Canvas</h3>
-                <img class="w-10 h-10 absolute top-4 left-4 rounded-full border-4   border-blue-600"
-                  src="/facebook/assets/friend-ava-1-YsZSxGZD.jpeg" alt="">
-              </div>
-              <div class="relative h-64 min-w-36 rounded-xl overflow-hidden">
-                <img class="h-full w-36 hover:scale-105 transition ease-out duration-300"
-                  src="https://i.ibb.co/DWrGxX6/carosel-2.png" alt="black chair and white table"
-                  class="object-cover object-center w-full" />
-                <h3 class="absolute bottom-2 left-2 text-sm font-semibold leading-5 text-white dark:text-gray-900">
-                  Life's Canvas</h3>
-                <img class="w-10 h-10 absolute top-4 left-4 rounded-full border-4   border-blue-600"
-                  src="/facebook/assets/friend-ava-1-YsZSxGZD.jpeg" alt="">
-              </div>
-              <div class="relative h-64 min-w-36 rounded-xl overflow-hidden">
-                <img class="h-full w-36 hover:scale-105 transition ease-out duration-300"
-                  src="https://i.ibb.co/DWrGxX6/carosel-2.png" alt="black chair and white table"
-                  class="object-cover object-center w-full" />
-                <h3 class="absolute bottom-2 left-2 text-sm font-semibold leading-5 text-white dark:text-gray-900">
-                  Life's Canvas</h3>
-                <img class="w-10 h-10 absolute top-4 left-4 rounded-full border-4   border-blue-600"
-                  src="/facebook/assets/friend-ava-1-YsZSxGZD.jpeg" alt="">
-              </div>
-
-
-
-            </div>
-
-
+            <span class="unliked text-base text-neutral-500">97</span>
+            <span class="hidden liked text-base text-neutral-500"
+              >You and 97 others</span
+            >
           </div>
 
-          <!-- next button -->
-          <button aria-label="slide forward"
-            class="hover:bg-white w-12 h-12 rounded-full bg-slate-200 cursor-pointer absolute z-10 right-0 mr-10 grid place-content-center"
-            id="next">
-            <svg class="dark:text-gray-900 text-neutral-500 scale-125 " width="8" height="14" viewBox="0 0 8 14"
-              fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M1 1L7 7L1 13" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                stroke-linejoin="round" />
-            </svg>
-          </button>
-        </div>
-      </section>
-
-      <!-- my-blog -->
-      <section class="px-4 bg-white rounded-lg my-4 shadow-[0_2px_2px_rgba(0,0,0,0.1)]">
-        <!-- top hafl -->
-        <div class="py-3 w-full flex items-center gap-2 border-b border-neutral-400">
-          <img class="w-10 h-10 rounded-full" src="/facebook/assets/Avatar-2-e-wt5czA.jpg" alt="Avatar">
-          <button class="flex-1 p-2 rounded-full  bg-slate-200 hover:bg-slate-300 text-neutral-500 text-left"
-            type="button">What's on your mind, xxx?</button>
-        </div>
-        <!-- bottom half -->
-        <div class="grid grid-cols-3 place-content-center place-items-center text-neutral-500 text-base py-4">
+          <!-- like, comments and share -->
           <div
-            class="w-full cursor-pointer flex justify-center items-center gap-2 py-2 hover:bg-slate-200 px-4  rounded-lg">
-            <i class="fa-solid fa-video text-2xl text-pink-600"></i>
-            <span>Live video</span>
-          </div>
-          <div
-            class="w-full cursor-pointer flex justify-center items-center gap-2 py-2 hover:bg-slate-200 px-4  rounded-lg">
-            <i class="fa-solid fa-photo-film text-2xl text-green-600"></i>
-            <span>Photo/video</span>
-          </div>
-          <div
-            class="w-full cursor-pointer flex justify-center items-center gap-2 py-2 hover:bg-slate-200 px-4  rounded-lg">
-            <i class="fa-regular fa-face-smile text-2xl text-yellow-500"></i>
-            <span>Feeling/activity</span>
-          </div>
-        </div>
-      </section>
-      </style>
-      <!-- friends-blogs-1 -->
-      <section class="friends-blog bg-white rounded-lg my-4 shadow-[0_2px_2px_rgba(0,0,0,0.1)]">
-        <!-- friends-blog-header -->
-        <header class="flex justify-between items-center py-3 px-4 text-neutral-500">
-          <!-- name and avatar -->
-          <div class="flex items-center gap-2">
-            <img class="w-10 h-10 rounded-full" src="/facebook/assets/friend-ava-3-0REi1mL-.jpeg" alt="Avatar">
-            <div>
-              <p class="text-black">Kelly Ann</p>
-              <div class=" text-sm">
-                <span>1h.</span>
-                <i class="fa-solid fa-earth-americas"></i>
-              </div>
-            </div>
-          </div>
-          <!-- icon:three points and icon:closing -->
-          <div class="text-2xl">
-            <i class="fa-solid fa-ellipsis mx-3"></i>
-            <i class="fa-solid fa-xmark"></i>
-          </div>
-        </header>
-        <!-- blog content -->
-        <div>
-          <p class="px-4 pb-3">After getting along for a long time, you will find that the greatest attraction between
-            people is not your appearance or your aura.
-            It’s about the down-to-earth, sincerity and kindness you convey to the other person.</p>
-          <!-- new page of friends' blog -->
-          <a href="https://www.facebook.com/photo?fbid=1677323906412439&set=a.126607728150739"><img class="w-full"
-              src="/facebook/assets/image-blog-Bo-VgOAd.jpeg" alt=""></a>
-        </div>
-        <!-- comments -->
-        <!-- like counts -->
-        <div class="info-bar flex items-center gap-2 text-xl px-4 py-2 border-b border-neutral-400">
-          <span class="w-5 h-5 rounded-full bg-blue-600 grid place-content-center">
-            <i class="fa-solid fa-thumbs-up text-xs text-white"></i>
-          </span>
-          <span class="unliked text-base text-neutral-500">6</span>
-          <span class="hidden liked text-base text-neutral-500">You and 14 others</span>
-        </div>
-
-        <!-- like, comments and share -->
-        <div
-          class="relative flex justify-between items-center gap-1 px-4 py-1  text-neutral-500  text-base border-b border-neutral-400">
-          <!-- like part -->
-          <a class="like-anchor flex-1" href="javasript:;">
-            <label>
-              <input type="checkbox" class="hidden absolute top-10 ">
-              <div
-                class="toggle-like text-neutral-500 flex items-center justify-center gap-2 w-full py-1 hover:bg-slate-200  rounded-lg">
-                <i class="like-icon fa-solid fa-thumbs-up text-2xl"></i>
-                <span>Like</span>
-                <!-- emoji package -->
+            class="relative flex justify-between items-center gap-1 px-4 py-1 text-neutral-500 text-base border-b border-neutral-400"
+          >
+            <!-- like part -->
+            <a class="like-anchor flex-1" href="javasript:;">
+              <input
+                id="toggle-like-1"
+                type="checkbox"
+                class="hidden absolute top-10"
+              />
+              <label for="toggle-like-1" class="relative z-10 cursor-pointer">
                 <div
-                  class="emoji-package absolute w-0 left-0 bottom-0 opacity-0 flex gap-2 items-center bg-white px-[4px] py-[0] rounded-full shadow-[0_2px_2px_rgba(0,0,0,0.1)]">
-                  <img
-                    class="w-9 h-9 transform transition-all duration-300 ease-in-out hover:scale-125 origin-bottom object-contain"
-                    src="/facebook/assets/emoji-thumb-up-Crl8fQ8n.gif" alt="">
-                  <img class="w-9 h-9 transform transition-all duration-300 ease-in-out hover:scale-125 origin-bottom"
-                    src="/facebook/assets/emoji-love-2-C9f3udHY.gif" alt="">
-                  <img class="w-9 h-9 transform transition-all duration-300 ease-in-out hover:scale-125 origin-bottom"
-                    src="/facebook/assets/emoji-happy-7AZQQFQy.gif" alt="">
-                  <img class="w-9 h-9 transform transition-all duration-300 ease-in-out hover:scale-125 origin-bottom"
-                    src="/facebook/assets/emoji-supprised-rs_nNH5p.gif" alt="">
-                  <img class="w-9 h-9 transform transition-all duration-300 ease-in-out hover:scale-125 origin-bottom"
-                    src="/facebook/assets/emoji-sad-D0zl0ze8.gif" alt="">
-                  <img class="w-12 h-12 transform transition-all duration-300 ease-in-out hover:scale-125 origin-bottom"
-                    src="/facebook/assets/emoji-angry-CSuC0h-t.gif" alt="">
+                  class="toggle-like text-neutral-500 w-full py-1 hover:bg-slate-200 rounded-lg"
+                >
+                  <div class="flex items-center justify-center gap-2">
+                    <!-- icon like -->
+                    <i
+                      class="icon-like fa-solid fa-thumbs-up text-2xl w-6 h-6 leading-6 text-center inline-block"
+                    ></i>
+                    <span class="icon-like">Like</span>
+                    <!-- icon love -->
+                    <img
+                      class="icon-love icon-others hidden w-6 h-6"
+                      src="/facebook/assets/love-BBiaG0yr.png"
+                      alt=""
+                    />
+                    <span class="icon-love span-others hidden">Love</span>
+                    <!-- icon happy -->
+                    <img
+                      class="icon-happy icon-others hidden w-6 h-6"
+                      src="data:image/png;base64,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"
+                      alt=""
+                    />
+                    <span class="icon-happy span-others hidden">Haha</span>
+                    <!-- icon supprised -->
+                    <img
+                      class="icon-supprised icon-others hidden w-6 h-6"
+                      src="data:image/png;base64,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"
+                      alt=""
+                    />
+                    <span class="icon-supprised span-others hidden">Wow</span>
+                    <!-- icon supprised -->
+                    <img
+                      class="icon-sad icon-others hidden w-6 h-6"
+                      src="data:image/png;base64,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"
+                      alt=""
+                    />
+                    <span class="icon-sad span-others hidden">Sad</span>
+                    <!-- icon angry -->
+                    <img
+                      class="icon-angry icon-others hidden w-6 h-6"
+                      src="data:image/png;base64,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"
+                      alt=""
+                    />
+                    <span class="icon-angry span-others hidden">Angry</span>
+                  </div>
+                </div>
+              </label>
+            </a>
+            <!-- emoji package -->
+            <div
+              class="emoji-package absolute w-0 left-0 bottom-0 opacity-0 flex gap-2 items-center bg-white px-[4px] py-[0] rounded-full shadow-[0_2px_2px_rgba(0,0,0,0.1)]"
+            >
+              <!-- emoji like -->
+              <input
+                id="like-1"
+                type="radio"
+                name="icon-switch"
+                class="hidden absolute"
+              />
+              <label for="like-1" class="cursor-pointer">
+                <img
+                  class="w-9 h-9 transform transition-all duration-300 ease-in-out hover:scale-125 origin-bottom object-contain"
+                  src="/facebook/assets/emoji-thumb-up-Crl8fQ8n.gif"
+                  alt=""
+                />
+              </label>
+              <!-- emoji love -->
+              <input
+                id="love-1"
+                type="radio"
+                name="icon-switch"
+                class="hidden absolute"
+              />
+              <label for="love-1" class="cursor-pointer">
+                <img
+                  class="w-9 h-9 transform transition-all duration-300 ease-in-out hover:scale-125 origin-bottom"
+                  src="/facebook/assets/emoji-love-2-C9f3udHY.gif"
+                  alt=""
+                />
+              </label>
+              <!-- emoji happy -->
+              <input
+                id="happy-1"
+                type="radio"
+                name="icon-switch"
+                class="hidden absolute"
+              />
+              <label for="happy-1" class="cursor-pointer">
+                <img
+                  class="w-9 h-9 transform transition-all duration-300 ease-in-out hover:scale-125 origin-bottom"
+                  src="/facebook/assets/emoji-happy-7AZQQFQy.gif"
+                  alt=""
+                />
+              </label>
+              <!-- emoji supprised -->
+              <input
+                id="supprised-1"
+                type="radio"
+                name="icon-switch"
+                class="hidden absolute"
+              />
+              <label for="supprised-1" class="cursor-pointer">
+                <img
+                  class="w-9 h-9 transform transition-all duration-300 ease-in-out hover:scale-125 origin-bottom"
+                  src="/facebook/assets/emoji-supprised-rs_nNH5p.gif"
+                  alt=""
+                />
+              </label>
+              <!-- emoji sad -->
+              <input
+                id="sad-1"
+                type="radio"
+                name="icon-switch"
+                class="hidden absolute"
+              />
+              <label for="sad-1" class="cursor-pointer">
+                <img
+                  class="w-9 h-9 transform transition-all duration-300 ease-in-out hover:scale-125 origin-bottom"
+                  src="/facebook/assets/emoji-sad-D0zl0ze8.gif"
+                  alt=""
+                />
+              </label>
+              <!-- emoji angry -->
+              <input
+                id="angry-1"
+                type="radio"
+                name="icon-switch"
+                class="hidden absolute"
+              />
+              <label for="angry-1" class="cursor-pointer">
+                <img
+                  class="w-9 h-9 transform transition-all duration-300 ease-in-out hover:scale-125 origin-bottom"
+                  src="/facebook/assets/emoji-angry-CSuC0h-t.gif"
+                  alt=""
+                />
+              </label>
+            </div>
+            <a class="flex-1" href="javasript:;">
+              <div
+                class="flex items-center justify-center gap-2 w-full py-1 hover:bg-slate-200 rounded-lg"
+              >
+                <i
+                  class="fa-regular fa-comment text-2xl w-6 h-6 leading-6 text-center inline-block"
+                ></i>
+                <span>Comment</span>
+              </div>
+            </a>
+            <a class="flex-1" href="javasript:;">
+              <div
+                class="flex items-center justify-center gap-2 w-full py-1 hover:bg-slate-200 rounded-lg"
+              >
+                <i
+                  class="fa-solid fa-share text-2xl w-6 h-6 leading-6 text-center inline-block"
+                ></i>
+                <span>Share</span>
+              </div>
+            </a>
+          </div>
+          <!-- my comment -->
+          <div
+            class="relative py-2 w-full flex items-center gap-2 px-4 text-neutral-500"
+          >
+            <img
+              class="w-10 h-10 rounded-full"
+              src="/facebook/assets/Avatar-2-e-wt5czA.jpg"
+              alt="Avatar"
+            />
+            <form action="" class="flex-1">
+              <input
+                type="text"
+                class="w-full p-2 rounded-full bg-slate-200 focus:outline-none"
+                placeholder="Comments as xxx"
+              />
+              <button class="absolute"></button>
+            </form>
+            <div class="absolute right-6 flex gap-2">
+              <i class="fa-regular fa-comment"></i>
+              <i class="fa-regular fa-face-smile"></i>
+              <i class="fa-solid fa-camera"></i>
+              <i class="fa-regular fa-image"></i>
+              <i class="fa-regular fa-note-sticky"></i>
+            </div>
+          </div>
+        </section>
+        <!-- friends-blogs-2 -->
+        <section
+          class="friends-blog blog2 bg-white rounded-lg my-4 shadow-[0_2px_2px_rgba(0,0,0,0.1)]"
+        >
+          <!-- friends-blog-header -->
+          <header
+            class="flex justify-between items-center py-3 px-4 text-neutral-500"
+          >
+            <!-- name and avatar -->
+            <div class="flex items-center gap-2">
+              <img
+                class="w-10 h-10 rounded-full object-cover"
+                src="/facebook/assets/shanhai-D8ahm0Jd.jpg"
+                alt="Avatar"
+              />
+              <div>
+                <p class="text-black">山海有名</p>
+                <div class="text-sm">
+                  <span>March 31 at 8:54 AM</span>
+                  <i class="fa-solid fa-earth-americas"></i>
                 </div>
               </div>
-            </label>
-          </a>
-          <a class="flex-1" href="javasript:;">
-            <div class="flex items-center justify-center gap-2 w-full py-1 hover:bg-slate-200  rounded-lg">
-              <i class="fa-regular fa-comment text-2xl"></i>
-              <span>Comment</span>
             </div>
-          </a>
-          <a class="flex-1" href="javasript:;">
-            <div class="flex items-center justify-center gap-2 w-full py-1 hover:bg-slate-200   rounded-lg">
-              <i class="fa-solid fa-share text-2xl "></i>
-              <span>Share</span>
+            <!-- icon:three points and icon:closing -->
+            <div class="text-2xl">
+              <i class="fa-solid fa-ellipsis mx-3"></i>
+              <i class="fa-solid fa-xmark"></i>
             </div>
-          </a>
-        </div>
-        <!-- my comment -->
-        <div class="relative py-2 w-full flex items-center gap-2 px-4 text-neutral-500">
-          <img class="w-10 h-10 rounded-full" src="/facebook/assets/Avatar-2-e-wt5czA.jpg" alt="Avatar">
-          <form action="" class="flex-1">
-            <input type="text" class="w-full p-2 rounded-full bg-slate-200  focus:outline-none"
-              placeholder="Comments as xxx">
-            </input>
-            <button class="absolute"></button>
-          </form>
-          <div class="absolute right-6 flex gap-2 ">
-            <i class="fa-regular fa-comment"></i>
-            <i class="fa-regular fa-face-smile"></i>
-            <i class="fa-solid fa-camera"></i>
-            <i class="fa-regular fa-image"></i>
-            <i class="fa-regular fa-note-sticky"></i>
+          </header>
+          <!-- blog content -->
+          <div>
+            <p class="px-4 pb-3">
+              春日徽州。從此以後，桃源在我心裏有了具體的樣子。
+            </p>
+            <!-- new page of friends' blog -->
+            <div class="bg-[#84C5D6]">
+              <a href="friend-blog.html"
+                ><img
+                  class="w-2/3 mx-auto"
+                  src="/facebook/assets/shanhai-blog-BSahmibn.jpg"
+                  alt="Shanhai"
+              /></a>
+            </div>
           </div>
-        </div>
-      </section>
-      <!-- friends-blogs-2 -->
-      <section class="friends-blog bg-white rounded-lg my-4 shadow-[0_2px_2px_rgba(0,0,0,0.1)]">
-        <!-- friends-blog-header -->
-        <header class="flex justify-between items-center py-3 px-4 text-neutral-500">
-          <!-- name and avatar -->
-          <div class="flex items-center gap-2">
-            <img class="w-10 h-10 rounded-full" src="/facebook/assets/friend-ava-3-0REi1mL-.jpeg" alt="Avatar">
-            <div>
-              <p class="text-black">Kelly Ann</p>
-              <div class=" text-sm">
-                <span>1h.</span>
-                <i class="fa-solid fa-earth-americas"></i>
+          <!-- comments -->
+          <!-- like counts -->
+          <div
+            class="info-bar flex items-center gap-2 text-xl px-4 py-2 border-b border-neutral-400"
+          >
+            <span
+              class="w-5 h-5 rounded-full bg-blue-600 grid place-content-center"
+            >
+              <i class="fa-solid fa-thumbs-up text-xs text-white"></i>
+            </span>
+            <span class="unliked text-base text-neutral-500">97</span>
+            <span class="hidden liked text-base text-neutral-500"
+              >You and 97 others</span
+            >
+          </div>
+
+          <!-- like, comments and share -->
+          <div
+            class="relative flex justify-between items-center gap-1 px-4 py-1 text-neutral-500 text-base border-b border-neutral-400"
+          >
+            <!-- like part -->
+            <a class="like-anchor flex-1" href="javasript:;">
+              <input
+                id="toggle-like-2"
+                type="checkbox"
+                class="hidden absolute top-10"
+              />
+              <label for="toggle-like-2" class="relative z-10 cursor-pointer">
+                <div
+                  class="toggle-like text-neutral-500 w-full py-1 hover:bg-slate-200 rounded-lg"
+                >
+                  <div class="flex items-center justify-center gap-2">
+                    <!-- icon like -->
+                    <i
+                      class="icon-like fa-solid fa-thumbs-up text-2xl w-6 h-6 leading-6 text-center inline-block"
+                    ></i>
+                    <span class="icon-like">Like</span>
+                    <!-- icon love -->
+                    <img
+                      class="icon-love icon-others hidden w-6 h-6"
+                      src="/facebook/assets/love-BBiaG0yr.png"
+                      alt=""
+                    />
+                    <span class="icon-love span-others hidden">Love</span>
+                    <!-- icon happy -->
+                    <img
+                      class="icon-happy icon-others hidden w-6 h-6"
+                      src="data:image/png;base64,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"
+                      alt=""
+                    />
+                    <span class="icon-happy span-others hidden">Haha</span>
+                    <!-- icon supprised -->
+                    <img
+                      class="icon-supprised icon-others hidden w-6 h-6"
+                      src="data:image/png;base64,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"
+                      alt=""
+                    />
+                    <span class="icon-supprised span-others hidden">Wow</span>
+                    <!-- icon sad -->
+                    <img
+                      class="icon-sad icon-others hidden w-6 h-6"
+                      src="data:image/png;base64,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"
+                      alt=""
+                    />
+                    <span class="icon-sad span-others hidden">Sad</span>
+                    <!-- icon angry -->
+                    <img
+                      class="icon-angry icon-others hidden w-6 h-6"
+                      src="data:image/png;base64,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"
+                      alt=""
+                    />
+                    <span class="icon-angry span-others hidden">Angry</span>
+                  </div>
+                </div>
+              </label>
+            </a>
+            <!-- emoji package -->
+            <div
+              class="emoji-package absolute w-0 left-0 bottom-0 opacity-0 flex gap-2 items-center bg-white px-[4px] py-[0] rounded-full shadow-[0_2px_2px_rgba(0,0,0,0.1)]"
+            >
+              <!-- emoji like -->
+              <input
+                id="like-2"
+                type="radio"
+                name="icon-switch"
+                class="hidden absolute"
+              />
+              <label for="like-2" class="cursor-pointer">
+                <img
+                  class="w-9 h-9 transform transition-all duration-300 ease-in-out hover:scale-125 origin-bottom object-contain"
+                  src="/facebook/assets/emoji-thumb-up-Crl8fQ8n.gif"
+                  alt=""
+                />
+              </label>
+              <!-- emoji love -->
+              <input
+                id="love-2"
+                type="radio"
+                name="icon-switch"
+                class="hidden absolute"
+              />
+              <label for="love-2" class="cursor-pointer">
+                <img
+                  class="w-9 h-9 transform transition-all duration-300 ease-in-out hover:scale-125 origin-bottom"
+                  src="/facebook/assets/emoji-love-2-C9f3udHY.gif"
+                  alt=""
+                />
+              </label>
+              <!-- emoji happy -->
+              <input
+                id="happy-2"
+                type="radio"
+                name="icon-switch"
+                class="hidden absolute"
+              />
+              <label for="happy-2" class="cursor-pointer">
+                <img
+                  class="w-9 h-9 transform transition-all duration-300 ease-in-out hover:scale-125 origin-bottom"
+                  src="/facebook/assets/emoji-happy-7AZQQFQy.gif"
+                  alt=""
+                />
+              </label>
+              <!-- emoji supprised -->
+              <input
+                id="supprised-2"
+                type="radio"
+                name="icon-switch"
+                class="hidden absolute"
+              />
+              <label for="supprised-2" class="cursor-pointer">
+                <img
+                  class="w-9 h-9 transform transition-all duration-300 ease-in-out hover:scale-125 origin-bottom"
+                  src="/facebook/assets/emoji-supprised-rs_nNH5p.gif"
+                  alt=""
+                />
+              </label>
+              <!-- emoji sad -->
+              <input
+                id="sad-2"
+                type="radio"
+                name="icon-switch"
+                class="hidden absolute"
+              />
+              <label for="sad-2" class="cursor-pointer">
+                <img
+                  class="w-9 h-9 transform transition-all duration-300 ease-in-out hover:scale-125 origin-bottom"
+                  src="/facebook/assets/emoji-sad-D0zl0ze8.gif"
+                  alt=""
+                />
+              </label>
+              <!-- emoji angry -->
+              <input
+                id="angry-2"
+                type="radio"
+                name="icon-switch"
+                class="hidden absolute"
+              />
+              <label for="angry-2" class="cursor-pointer">
+                <img
+                  class="w-9 h-9 transform transition-all duration-300 ease-in-out hover:scale-125 origin-bottom"
+                  src="/facebook/assets/emoji-angry-CSuC0h-t.gif"
+                  alt=""
+                />
+              </label>
+            </div>
+            <a class="flex-1" href="javasript:;">
+              <div
+                class="flex items-center justify-center gap-2 w-full py-1 hover:bg-slate-200 rounded-lg"
+              >
+                <i
+                  class="fa-regular fa-comment text-2xl w-6 h-6 leading-6 text-center inline-block"
+                ></i>
+                <span>Comment</span>
               </div>
+            </a>
+            <a class="flex-1" href="javasript:;">
+              <div
+                class="flex items-center justify-center gap-2 w-full py-1 hover:bg-slate-200 rounded-lg"
+              >
+                <i
+                  class="fa-solid fa-share text-2xl w-6 h-6 leading-6 text-center inline-block"
+                ></i>
+                <span>Share</span>
+              </div>
+            </a>
+          </div>
+          <!-- my comment -->
+          <div
+            class="relative py-2 w-full flex items-center gap-2 px-4 text-neutral-500"
+          >
+            <img
+              class="w-10 h-10 rounded-full"
+              src="/facebook/assets/Avatar-2-e-wt5czA.jpg"
+              alt="Avatar"
+            />
+            <form action="" class="flex-1">
+              <input
+                type="text"
+                class="w-full p-2 rounded-full bg-slate-200 focus:outline-none"
+                placeholder="Comments as xxx"
+              />
+              <button class="absolute"></button>
+            </form>
+            <div class="absolute right-6 flex gap-2">
+              <i class="fa-regular fa-comment"></i>
+              <i class="fa-regular fa-face-smile"></i>
+              <i class="fa-solid fa-camera"></i>
+              <i class="fa-regular fa-image"></i>
+              <i class="fa-regular fa-note-sticky"></i>
             </div>
           </div>
-          <!-- icon:three points and icon:closing -->
-          <div class="text-2xl">
-            <i class="fa-solid fa-ellipsis mx-3"></i>
-            <i class="fa-solid fa-xmark"></i>
-          </div>
-        </header>
-        <!-- blog content -->
-        <div>
-          <p class="px-4 pb-3">After getting along for a long time, you will find that the greatest attraction between
-            people is not your appearance or your aura.
-            It’s about the down-to-earth, sincerity and kindness you convey to the other person.</p>
-          <!-- new page of friends' blog -->
-          <a href="./friend-blog.html"><img class="w-full" src="/facebook/assets/image-blog-Bo-VgOAd.jpeg" alt=""></a>
-        </div>
-        <!-- comments -->
-        <!-- like counts -->
-        <div class="info-bar flex items-center gap-2 text-xl px-4 py-2 border-b border-neutral-400">
-          <span class="w-5 h-5 rounded-full bg-blue-600 grid place-content-center">
-            <i class="fa-solid fa-thumbs-up text-xs text-white"></i>
-          </span>
-          <span class="unliked text-base text-neutral-500">6</span>
-          <span class="hidden liked text-base text-neutral-500">You and 14 others</span>
+        </section>
+      </div>
+      <!-- sidebar right -->
+      <aside
+        class="aside-right hidden custom-lg:block custom-3xl:ml-auto custom-4xl:ml-0 custom-4xl:mr-auto h-screen-minus-14 sticky top-14 w-80 pl-12 pr-4"
+      >
+        <!-- Sponsored part -->
+        <div
+          class="text-lg text-neutral-500 pt-6 pb-4 border-b border-neutral-400"
+        >
+          Sponsored
         </div>
 
-        <!-- like, comments and share -->
-        <div
-          class="relative flex justify-between items-center gap-1 px-4 py-1  text-neutral-500  text-base border-b border-neutral-400">
-          <!-- like part -->
-          <a class="like-anchor flex-1" href="javasript:;">
-            <label class="cursor-pointer">
-              <input type="checkbox" class=" hidden absolute top-10 cursor-pointer">
-              <div
-                class="toggle-like text-neutral-500 flex items-center justify-center gap-2 w-full py-1 hover:bg-slate-200  rounded-lg">
-                <i class="like-icon fa-solid fa-thumbs-up text-2xl"></i>
-                <span>Like</span>
-                <!-- emoji package -->
-                <div
-                  class="emoji-package absolute w-0 left-0 bottom-0 opacity-0 flex gap-2 items-center bg-white px-[4px] py-[0] rounded-full shadow-[0_2px_2px_rgba(0,0,0,0.1)]">
+        <!-- Friend requests -->
+        <div class="py-5 border-b border-neutral-400">
+          <div class="flex pb-4">
+            <span class="text-lg text-neutral-500">Friend requests</span>
+            <span class="text-blue-600 ml-auto">See all</span>
+          </div>
+
+          <div class="flex gap-3">
+            <!-- left image -->
+            <img
+              class="w-14 h-14 rounded-full"
+              src="/facebook/assets/friend-ava-4-BX7EVvw7.jpeg"
+              alt="Avatar"
+            />
+            <!-- right info -->
+            <div class="flex-1">
+              <!-- first line -->
+              <p class="flex justify-between">
+                <span>Zerro Fan</span
+                ><span class="text-sm text-neutral-500">1d</span>
+              </p>
+              <!-- second line -->
+              <div class="py-2 flex items-center">
+                <img
+                  class="w-5 h-5 rounded-full border-2 border-slate-200"
+                  src="/facebook/assets/friend-ava-4-BX7EVvw7.jpeg"
+                  alt="Avatar"
+                />
+                <div class="flex gap-2 items-center transform -translate-x-2">
                   <img
-                    class="w-9 h-9 transform transition-all duration-300 ease-in-out hover:scale-125 origin-bottom object-contain"
-                    src="/facebook/assets/emoji-thumb-up-Crl8fQ8n.gif" alt="">
-                  <img class="w-9 h-9 transform transition-all duration-300 ease-in-out hover:scale-125 origin-bottom"
-                    src="/facebook/assets/emoji-love-2-C9f3udHY.gif" alt="">
-                  <img class="w-9 h-9 transform transition-all duration-300 ease-in-out hover:scale-125 origin-bottom"
-                    src="/facebook/assets/emoji-happy-7AZQQFQy.gif" alt="">
-                  <img class="w-9 h-9 transform transition-all duration-300 ease-in-out hover:scale-125 origin-bottom"
-                    src="/facebook/assets/emoji-supprised-rs_nNH5p.gif" alt="">
-                  <img class="w-9 h-9 transform transition-all duration-300 ease-in-out hover:scale-125 origin-bottom"
-                    src="/facebook/assets/emoji-sad-D0zl0ze8.gif" alt="">
-                  <img class="w-12 h-12 transform transition-all duration-300 ease-in-out hover:scale-125 origin-bottom"
-                    src="/facebook/assets/emoji-angry-CSuC0h-t.gif" alt="">
+                    class="w-5 h-5 rounded-full border-2 border-slate-200"
+                    src="/facebook/assets/friend-ava-2-DXmAE5v7.jpeg"
+                    alt="Avatar"
+                  />
+                  <span class="text-sm text-neutral-500">5 mutual friends</span>
                 </div>
               </div>
-            </label>
-          </a>
-          <a class="flex-1" href="javasript:;">
-            <div class="flex items-center justify-center gap-2 w-full py-1 hover:bg-slate-200  rounded-lg">
-              <i class="fa-regular fa-comment text-2xl"></i>
-              <span>Comment</span>
-            </div>
-          </a>
-          <a class="flex-1" href="javasript:;">
-            <div class="flex items-center justify-center gap-2 w-full py-1 hover:bg-slate-200   rounded-lg">
-              <i class="fa-solid fa-share text-2xl"></i>
-              <span>Share</span>
-            </div>
-          </a>
-        </div>
-        <!-- my comment -->
-        <div class="relative py-2 w-full flex items-center gap-2 px-4 text-neutral-500">
-          <img class="w-10 h-10 rounded-full" src="/facebook/assets/Avatar-2-e-wt5czA.jpg" alt="Avatar">
-          <form action="" class="flex-1">
-            <input type="text" class="w-full p-2 rounded-full bg-slate-200  focus:outline-none"
-              placeholder="Comments as xxx">
-            </input>
-            <button class="absolute"></button>
-          </form>
-          <div class="absolute right-6 flex gap-2 ">
-            <i class="fa-regular fa-comment"></i>
-            <i class="fa-regular fa-face-smile"></i>
-            <i class="fa-solid fa-camera"></i>
-            <i class="fa-regular fa-image"></i>
-            <i class="fa-regular fa-note-sticky"></i>
-          </div>
-        </div>
-      </section>
-    </div>
-    <!-- sidebar right -->
-    <aside class="
-    aside-right
-    hidden
-    custom-lg:block
-    custom-3xl:ml-auto
-    custom-4xl:ml-0 custom-4xl:mr-auto 
-    h-screen-minus-14 
-    sticky
-    top-14
-    w-80 
-    pl-12
-    pr-4
-    ">
-
-      <!-- Sponsored part -->
-      <div class="text-lg text-neutral-500 pt-6 pb-4 border-b border-neutral-400">
-        Sponsored
-      </div>
-
-      <!-- Friend requests -->
-      <div class="py-5 border-b border-neutral-400">
-        <div class="flex pb-4">
-          <span class="text-lg text-neutral-500">Friend requests</span>
-          <span class="text-blue-600 ml-auto">See all</span>
-        </div>
-
-        <div class="flex gap-3">
-          <!-- left image -->
-          <img class="w-14 h-14 rounded-full" src="/facebook/assets/friend-ava-4-BX7EVvw7.jpeg" alt="Avatar">
-          <!-- right info -->
-          <div class="flex-1">
-            <!-- first line -->
-            <p class="flex justify-between"><span>Zerro Fan</span><span class="text-sm text-neutral-500">1d</span></p>
-            <!-- second line -->
-            <div class="py-2 flex items-center">
-              <img class="w-5 h-5 rounded-full border-2 border-slate-200" src="/facebook/assets/friend-ava-4-BX7EVvw7.jpeg" alt="Avatar">
-              <div class="flex gap-2 items-center transform -translate-x-2">
-                <img class="w-5 h-5 rounded-full border-2 border-slate-200" src="/facebook/assets/friend-ava-2-DXmAE5v7.jpeg"
-                  alt="Avatar">
-                <span class="text-sm text-neutral-500">5 mutual friends</span>
+              <!-- third line -->
+              <div class="flex gap-2">
+                <button class="flex-1 py-1 rounded-md text-white bg-blue-600">
+                  Confirm
+                </button>
+                <button class="flex-1 py-1 rounded-md bg-slate-300">
+                  Remove
+                </button>
               </div>
             </div>
-            <!-- third line -->
-            <div class="flex gap-2">
-              <button class="flex-1 py-1 rounded-md text-white bg-blue-600 ">Confirm</button>
-              <button class="flex-1 py-1 rounded-md bg-slate-300">Remove</button>
+          </div>
+        </div>
+
+        <!-- Birthdays -->
+        <div class="py-5 border-b border-neutral-400">
+          <!-- first line -->
+          <div class="pb-4">
+            <span class="text-lg text-neutral-500">Birthdays</span>
+          </div>
+          <!-- second line -->
+          <div class="flex gap-4 items-center">
+            <img class="w-7" src="data:image/svg+xml,%3c?xml%20version='1.0'%20standalone='no'?%3e%3c!DOCTYPE%20svg%20PUBLIC%20'-//W3C//DTD%20SVG%201.1//EN'%20'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3e%3csvg%20t='1717851834526'%20class='icon'%20viewBox='0%200%201024%201024'%20version='1.1'%20xmlns='http://www.w3.org/2000/svg'%20p-id='1903'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20width='200'%20height='200'%3e%3cpath%20d='M64%20880h896v128H64z%20m272.768-208l-0.464%20102.144a32%2032%200%200%200%2049.168%2027.168l126.8-80.592%20127.808%2081.456a32%2032%200%200%200%2049.2-26.272l0.224-10.224L854.848%20816H64v-144h272.768zM65.216%20575.696L171.376%20608H64v-112l1.216%2079.696z'%20fill='%23F73B2F'%20p-id='1904'%20data-spm-anchor-id='a313x.manage_type_myprojects.0.i3.219b3a81SRqoiQ'%20class='selected'%3e%3c/path%3e%3cpath%20d='M48%20608h16v64H48z%20m912%200h16v64h-16zM64%20608h107.376l165.456%2050.352-0.064%2013.648H64v-64zM48%20816h16v64H48z%20m912%200h16v64h-16z%20m0%2064H64v-64h790.848L960%20848v32z'%20fill='%23FFFFFF'%20p-id='1905'%3e%3c/path%3e%3cpath%20d='M689.504%20765.68l-0.224%2010.224a32%2032%200%201%201-49.2%2026.272l-127.808-81.456-126.8%2080.592a32%2032%200%200%201-49.168-27.168L336.768%20672H960v144h-105.152L960%20848l-270.496-82.32zM65.216%20575.696L64%20496h896v112H171.376l165.456%2050.352-271.616-82.656z'%20fill='%23D23228'%20p-id='1906'%3e%3c/path%3e%3cpath%20d='M960%20672H336.768l0.064-13.648L171.376%20608H960v64z%20m0%20176l-105.152-32H960v32z'%20fill='%23D9D9D9'%20p-id='1907'%3e%3c/path%3e%3cpath%20d='M52.512%20256s-38.928-236.512%20112-240c139.232-3.216%20220.544%20113.024%20236.912%20138.928V256H52.512z%20m920.416%200s38.912-236.512-112-240C721.68%2012.784%20640.368%20129.024%20624%20154.928%20621.952%20158.176%20624%20256%20624%20256h348.928z'%20fill='%23FFD140'%20p-id='1908'%3e%3c/path%3e%3cpath%20d='M895.984%2021.84C907.04%20153.072%20826.496%20236.416%20624%20256h352c10.832-95.184-3.056-179.088-80.016-234.16z'%20fill='%23CCA733'%20p-id='1909'%3e%3c/path%3e%3cpath%20d='M640%20256v-48a80.064%2080.064%200%200%200-23.424-56.576A80.064%2080.064%200%200%200%20560%20128h-96a80.064%2080.064%200%200%200-56.576%2023.424A80.064%2080.064%200%200%200%20384%20208v48'%20fill='%23FFD140'%20p-id='1910'%3e%3c/path%3e%3cpath%20d='M640%20256v-48a80.064%2080.064%200%200%200-23.424-56.576A80.064%2080.064%200%200%200%20560%20128h-16a80.064%2080.064%200%200%200-56.576%2023.424A80.064%2080.064%200%200%200%20464%20208v48'%20fill='%23CCA733'%20p-id='1911'%3e%3c/path%3e%3cpath%20d='M655.984%20496H1008V256H16v240h350.656'%20fill='%23F73B2F'%20p-id='1912'%20data-spm-anchor-id='a313x.manage_type_myprojects.0.i2.219b3a81SRqoiQ'%20class=''%3e%3c/path%3e%3cpath%20d='M640%20256H384v496l126.528-80L640%20752V256z'%20fill='%23FFD140'%20p-id='1913'%20data-spm-anchor-id='a313x.manage_type_myprojects.0.i4.219b3a81SRqoiQ'%20class='selected'%3e%3c/path%3e%3c/svg%3e" alt="gift" />
+            <p>
+              <span>Roy Yang</span
+              ><span class="text-base text-neutral-500">
+                's birthday is today.</span
+              >
+            </p>
+          </div>
+        </div>
+
+        <!-- Contacts -->
+        <div class="contacts py-5 border-b border-neutral-400">
+          <!-- Contacts header -->
+          <header>
+            <div class="flex gap-4 items-center pb-4 text-neutral-500">
+              <span class="text-lg">Contacts</span>
+              <i class="fa-solid fa-magnifying-glass text-sm ml-auto"></i>
+              <i class="fa-solid fa-ellipsis mx-3 text-xl"></i>
             </div>
+          </header>
+          <!-- Contacts list -->
+          <!-- online friends -->
+          <div class="pb-4 flex gap-2 items-center">
+            <div class="relative">
+              <img
+                class="w-10 h-10 rounded-full object-cover"
+                src="/facebook/assets/friend-ava-5-ymG1OQ6P.jpeg"
+                alt="Avatar"
+              />
+              <i
+                class="absolute right-[-1px] bottom-[1px] w-3 h-3 bg-green-600 rounded-full border-2 border-white"
+              ></i>
+            </div>
+            <span class="text-base">Gao</span>
+          </div>
+          <div class="pb-4 flex gap-2 items-center">
+            <div class="relative">
+              <img
+                class="w-10 h-10 rounded-full object-cover"
+                src="/facebook/assets/friend-ava-6-CUhgDZBz.jpeg"
+                alt="Avatar"
+              />
+              <i
+                class="absolute right-[-1px] bottom-[1px] w-3 h-3 bg-green-600 rounded-full border-2 border-white"
+              ></i>
+            </div>
+            <span class="text-base">Sim</span>
+          </div>
+          <div class="pb-4 flex gap-2 items-center">
+            <div class="relative">
+              <img
+                class="w-10 h-10 rounded-full object-cover"
+                src="/facebook/assets/friend-ava-7-DyYCqqWF.jpeg"
+                alt="Avatar"
+              />
+              <i
+                class="absolute right-[-1px] bottom-[1px] w-3 h-3 bg-green-600 rounded-full border-2 border-white"
+              ></i>
+            </div>
+            <span class="text-base">Ng Han</span>
+          </div>
+          <!-- offline friends -->
+          <div class="pb-4 flex gap-2 items-center">
+            <div class="relative">
+              <img
+                class="w-10 h-10 rounded-full object-cover"
+                src="/facebook/assets/friend-ava-8-BU3oZrQK.jpeg"
+                alt="Avatar"
+              />
+              <i
+                class="absolute right-0 bottom-0 px-1 text-xs text-green-600 font-Roboto roboto-regular h-5 bg-green-100 rounded-full border-2 border-white"
+                >8m</i
+              >
+            </div>
+            <span class="text-base">Luni</span>
+          </div>
+          <div class="pb-4 flex gap-2 items-center">
+            <img
+              class="w-10 h-10 rounded-full object-cover"
+              src="/facebook/assets/friend-ava-9-DBxwtUhI.jpeg"
+              alt="Avatar"
+            />
+            <span class="text-base">Zhen</span>
+          </div>
+          <div class="pb-4 flex gap-2 items-center">
+            <img
+              class="w-10 h-10 rounded-full object-cover"
+              src="/facebook/assets/friend-ava-10-4qbDDq5i.jpeg"
+              alt="Avatar"
+            />
+            <span class="text-base">Anto</span>
+          </div>
+          <div class="flex gap-2 items-center">
+            <img
+              class="w-10 h-10 rounded-full object-cover"
+              src="/facebook/assets/friend-ava-11-OpwfCONH.jpeg"
+              alt="Avatar"
+            />
+            <span class="text-base">Anas</span>
           </div>
         </div>
-      </div>
 
-      <!-- Birthdays -->
-      <div class="py-5 border-b border-neutral-400">
-        <!-- first line -->
-        <div class="pb-4">
-          <span class="text-lg text-neutral-500">Birthdays</span>
-        </div>
-        <!-- second line -->
-        <div class="flex gap-4 items-center">
-          <img class="w-7" src="data:image/svg+xml,%3c?xml%20version='1.0'%20standalone='no'?%3e%3c!DOCTYPE%20svg%20PUBLIC%20'-//W3C//DTD%20SVG%201.1//EN'%20'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3e%3csvg%20t='1717851834526'%20class='icon'%20viewBox='0%200%201024%201024'%20version='1.1'%20xmlns='http://www.w3.org/2000/svg'%20p-id='1903'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20width='200'%20height='200'%3e%3cpath%20d='M64%20880h896v128H64z%20m272.768-208l-0.464%20102.144a32%2032%200%200%200%2049.168%2027.168l126.8-80.592%20127.808%2081.456a32%2032%200%200%200%2049.2-26.272l0.224-10.224L854.848%20816H64v-144h272.768zM65.216%20575.696L171.376%20608H64v-112l1.216%2079.696z'%20fill='%23F73B2F'%20p-id='1904'%20data-spm-anchor-id='a313x.manage_type_myprojects.0.i3.219b3a81SRqoiQ'%20class='selected'%3e%3c/path%3e%3cpath%20d='M48%20608h16v64H48z%20m912%200h16v64h-16zM64%20608h107.376l165.456%2050.352-0.064%2013.648H64v-64zM48%20816h16v64H48z%20m912%200h16v64h-16z%20m0%2064H64v-64h790.848L960%20848v32z'%20fill='%23FFFFFF'%20p-id='1905'%3e%3c/path%3e%3cpath%20d='M689.504%20765.68l-0.224%2010.224a32%2032%200%201%201-49.2%2026.272l-127.808-81.456-126.8%2080.592a32%2032%200%200%201-49.168-27.168L336.768%20672H960v144h-105.152L960%20848l-270.496-82.32zM65.216%20575.696L64%20496h896v112H171.376l165.456%2050.352-271.616-82.656z'%20fill='%23D23228'%20p-id='1906'%3e%3c/path%3e%3cpath%20d='M960%20672H336.768l0.064-13.648L171.376%20608H960v64z%20m0%20176l-105.152-32H960v32z'%20fill='%23D9D9D9'%20p-id='1907'%3e%3c/path%3e%3cpath%20d='M52.512%20256s-38.928-236.512%20112-240c139.232-3.216%20220.544%20113.024%20236.912%20138.928V256H52.512z%20m920.416%200s38.912-236.512-112-240C721.68%2012.784%20640.368%20129.024%20624%20154.928%20621.952%20158.176%20624%20256%20624%20256h348.928z'%20fill='%23FFD140'%20p-id='1908'%3e%3c/path%3e%3cpath%20d='M895.984%2021.84C907.04%20153.072%20826.496%20236.416%20624%20256h352c10.832-95.184-3.056-179.088-80.016-234.16z'%20fill='%23CCA733'%20p-id='1909'%3e%3c/path%3e%3cpath%20d='M640%20256v-48a80.064%2080.064%200%200%200-23.424-56.576A80.064%2080.064%200%200%200%20560%20128h-96a80.064%2080.064%200%200%200-56.576%2023.424A80.064%2080.064%200%200%200%20384%20208v48'%20fill='%23FFD140'%20p-id='1910'%3e%3c/path%3e%3cpath%20d='M640%20256v-48a80.064%2080.064%200%200%200-23.424-56.576A80.064%2080.064%200%200%200%20560%20128h-16a80.064%2080.064%200%200%200-56.576%2023.424A80.064%2080.064%200%200%200%20464%20208v48'%20fill='%23CCA733'%20p-id='1911'%3e%3c/path%3e%3cpath%20d='M655.984%20496H1008V256H16v240h350.656'%20fill='%23F73B2F'%20p-id='1912'%20data-spm-anchor-id='a313x.manage_type_myprojects.0.i2.219b3a81SRqoiQ'%20class=''%3e%3c/path%3e%3cpath%20d='M640%20256H384v496l126.528-80L640%20752V256z'%20fill='%23FFD140'%20p-id='1913'%20data-spm-anchor-id='a313x.manage_type_myprojects.0.i4.219b3a81SRqoiQ'%20class='selected'%3e%3c/path%3e%3c/svg%3e" alt="gift">
-          <p><span>Roy Yang</span><span class="text-base text-neutral-500"> 's birthday is today.</span></p>
-        </div>
-      </div>
-
-      <!-- Contacts -->
-      <div class="contacts py-5 border-b border-neutral-400">
-        <!-- Contacts header -->
-        <header>
-          <div class="flex gap-4 items-center pb-4 text-neutral-500">
-            <span class="text-lg">Contacts</span>
-            <i class="fa-solid fa-magnifying-glass text-sm ml-auto"></i>
-            <i class="fa-solid fa-ellipsis mx-3 text-xl"></i>
-          </div>
-        </header>
-        <!-- Contacts list -->
-        <!-- online friends -->
-        <div class="pb-4 flex gap-2 items-center">
-          <div class="relative">
-            <img class="w-10 h-10 rounded-full object-cover" src="/facebook/assets/friend-ava-5-ymG1OQ6P.jpeg" alt="Avatar">
-            <i class="absolute right-[-1px] bottom-[1px] w-3 h-3 bg-green-600 rounded-full border-2 border-white"></i>
-          </div>
-          <span class="text-base">Gao</span>
-        </div>
-        <div class="pb-4 flex gap-2 items-center">
-          <div class="relative">
-            <img class="w-10 h-10 rounded-full object-cover" src="/facebook/assets/friend-ava-6-CUhgDZBz.jpeg" alt="Avatar">
-            <i class="absolute right-[-1px] bottom-[1px] w-3 h-3 bg-green-600 rounded-full border-2 border-white"></i>
-          </div>
-          <span class="text-base">Sim</span>
-        </div>
-        <div class="pb-4 flex gap-2 items-center">
-          <div class="relative">
-            <img class="w-10 h-10 rounded-full object-cover" src="/facebook/assets/friend-ava-7-DyYCqqWF.jpeg" alt="Avatar">
-            <i class="absolute right-[-1px] bottom-[1px] w-3 h-3 bg-green-600 rounded-full border-2 border-white"></i>
-          </div>
-          <span class="text-base">Ng Han</span>
-        </div>
-        <!-- offline friends -->
-        <div class="pb-4 flex gap-2 items-center">
-          <div class="relative">
-            <img class="w-10 h-10 rounded-full object-cover" src="/facebook/assets/friend-ava-8-BU3oZrQK.jpeg" alt="Avatar">
-            <i
-              class="absolute right-0 bottom-0 px-1 text-xs text-green-600 font-Roboto roboto-regular h-5 bg-green-100 rounded-full border-2 border-white">8m</i>
-          </div>
-          <span class="text-base">Luni</span>
-        </div>
-        <div class="pb-4 flex gap-2 items-center">
-          <img class="w-10 h-10 rounded-full object-cover" src="/facebook/assets/friend-ava-9-DBxwtUhI.jpeg" alt="Avatar">
-          <span class="text-base">Zhen</span>
-        </div>
-        <div class="pb-4 flex gap-2 items-center">
-          <img class="w-10 h-10 rounded-full object-cover" src="/facebook/assets/friend-ava-10-4qbDDq5i.jpeg" alt="Avatar">
-          <span class="text-base">Anto</span>
+        <!-- Group conversations -->
+        <div class="py-5 text-lg text-neutral-500">
+          <span>Group conversations</span>
         </div>
         <div class="flex gap-2 items-center">
-          <img class="w-10 h-10 rounded-full object-cover" src="/facebook/assets/friend-ava-11-OpwfCONH.jpeg" alt="Avatar">
-          <span class="text-base">Anas</span>
+          <span
+            class="w-10 h-10 rounded-full bg-slate-200 grid place-content-center"
+          >
+            <i class="fa-solid fa-plus text-base"></i>
+          </span>
+          <span class="text-base">Create new group</span>
         </div>
-      </div>
-
-      <!-- Group conversations -->
-      <div class="py-5 text-lg text-neutral-500">
-        <span>Group conversations</span>
-      </div>
-      <div class="flex gap-2 items-center">
-        <span class="w-10 h-10 rounded-full bg-slate-200 grid place-content-center">
-          <i class="fa-solid fa-plus text-base"></i>
-        </span>
-        <span class="text-base">Create new group</span>
-      </div>
-    </aside>
-  </main>
-</body>
-
+      </aside>
+    </main>
+  </body>
 </html>
