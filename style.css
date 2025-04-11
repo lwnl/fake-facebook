@@ -48,6 +48,63 @@
   }
 }
 
+.friends-blog {
+  :has(#like:checked) {
+    .icon-others {
+      display: none;
+    }
+    .icon-like {
+      display: block;
+      /* color:rgb(37, 99, 235); */
+    }
+  }
+  
+  :has(#love:checked) {
+    .icon-like {
+      display: none;
+    }
+    .icon-love {
+      display: block;
+    }
+  }
+  
+  :has(#happy:checked) {
+    .icon-others, .icon-like {
+      display: none;
+    }
+    .icon-happy {
+      display: block;
+    }
+  }
+  
+  :has(#supprised:checked) {
+    .icon-others, .icon-like {
+      display: none;
+    }
+    .icon-supprised {
+      display: block;
+    }
+  }
+  
+  :has(#sad:checked) {
+    .icon-others, .icon-like {
+      display: none;
+    }
+    .icon-sad {
+      display: block;
+    }
+  }
+  
+  :has(#angry:checked) {
+    .icon-others, .icon-like {
+      display: none;
+    }
+    .icon-angry {
+      display: block;
+    }
+  }
+}
+
 .friends-blog.blog1 {
   :has(#like-1:checked) {
     .icon-others {
