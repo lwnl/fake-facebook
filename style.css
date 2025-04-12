@@ -10,6 +10,13 @@
   font-style: normal;
 }
 
+/* .emoji-package {
+  width: 100%;
+  opacity: 0;
+  bottom: 0;
+  transition: all 0s ease-in-out;
+} */
+
 .like-anchor:hover .emoji-package,
 .like-anchor:hover + .emoji-package,
 .emoji-package:hover {
@@ -40,12 +47,12 @@
     display: block;
   }
 
-  .emoji-package {
+  /* .emoji-package {
     width: 100%;
     opacity: 0;
     bottom: 0;
     transition: all 0s ease-in-out;
-  }
+  } */
 }
 
 .icon-others {
@@ -57,6 +64,31 @@
     .icon-others {
       display: none;
     }
+    /* .toggle-like {
+      color: rgb(37, 99, 235);
+    } */
+
+    /* i.icon-like {
+      display: block;
+      animation: toggle-like;
+      animation-duration: 0.5s;
+      animation-timing-function: ease-in-out;
+    } */
+
+    span.unliked {
+      display: none;
+    }
+
+    span.liked {
+      display: block;
+    }
+
+    /* .emoji-package {
+      width: 100%;
+      opacity: 0;
+      bottom: 0;
+      transition: all 0s ease-in-out;
+    } */
   }
   &:has(#love:checked),
   &:has(#happy:checked),
