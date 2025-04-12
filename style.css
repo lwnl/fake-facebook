@@ -4,14 +4,15 @@
 
 /* Add your custom styles here */
 
-
 .roboto-regular {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
-.like-anchor:hover .emoji-package, .like-anchor:hover + .emoji-package, .emoji-package:hover {
+.like-anchor:hover .emoji-package,
+.like-anchor:hover + .emoji-package,
+.emoji-package:hover {
   width: auto;
   opacity: 1;
   bottom: 2.3rem;
@@ -19,13 +20,12 @@
   transition-delay: 0.5s;
 }
 
-
 .friends-blog:has(.like-anchor input:checked) {
   .toggle-like {
     color: rgb(37, 99, 235);
   }
 
-  i.icon-like, .icon {
+  i.icon-like {
     display: block;
     animation: toggle-like;
     animation-duration: 0.5s;
@@ -48,65 +48,59 @@
   }
 }
 
+.icon-others {
+  display: none;
+}
+
 .friends-blog {
-  :has(#like:checked) {
-    .icon-others {
-      display: none;
-    }
-    .icon-like {
-      display: block;
-      /* color:rgb(37, 99, 235); */
-    }
-  }
-  
-  :has(#love:checked) {
+  &:has(#love:checked),
+  &:has(#happy:checked),
+  &:has(#surprised:checked),
+  &:has(#sad:checked),
+  &:has(#angry:checked) {
     .icon-like {
       display: none;
     }
-    .icon-love {
-      display: block;
+
+    .toggle-like {
+      color: rgb(37, 99, 235);
     }
-  }
-  
-  :has(#happy:checked) {
-    .icon-others, .icon-like {
+    span.unliked {
       display: none;
     }
-    .icon-happy {
+
+    span.liked {
       display: block;
     }
-  }
-  
-  :has(#supprised:checked) {
-    .icon-others, .icon-like {
+
+    .icon-like {
       display: none;
     }
-    .icon-supprised {
-      display: block;
-    }
   }
-  
-  :has(#sad:checked) {
-    .icon-others, .icon-like {
-      display: none;
-    }
-    .icon-sad {
-      display: block;
-    }
+
+  &:has(#love:checked) .icon-love {
+    display: block;
   }
-  
-  :has(#angry:checked) {
-    .icon-others, .icon-like {
-      display: none;
-    }
-    .icon-angry {
-      display: block;
-    }
+
+  &:has(#happy:checked) .icon-happy {
+    display: block;
+  }
+
+  &:has(#surprised:checked) .icon-surprised {
+    display: block;
+  }
+
+  &:has(#sad:checked) .icon-sad {
+    display: block;
+  }
+
+  &:has(#angry:checked) .icon-angry {
+    display: block;
   }
 }
 
 .friends-blog.blog1 {
-  :has(#like-1:checked) {
+  &:has(#like-1:checked) {
     .icon-others {
       display: none;
     }
@@ -115,8 +109,8 @@
       /* color:rgb(37, 99, 235); */
     }
   }
-  
-  :has(#love-1:checked) {
+
+  &:has(#love-1:checked) {
     .icon-like {
       display: none;
     }
@@ -124,36 +118,40 @@
       display: block;
     }
   }
-  
-  :has(#happy-1:checked) {
-    .icon-others, .icon-like {
+
+  &:has(#happy-1:checked) {
+    .icon-others,
+    .icon-like {
       display: none;
     }
     .icon-happy {
       display: block;
     }
   }
-  
-  :has(#supprised-1:checked) {
-    .icon-others, .icon-like {
+
+  &:has(#surprised-1:checked) {
+    .icon-others,
+    .icon-like {
       display: none;
     }
-    .icon-supprised {
+    .icon-surprised {
       display: block;
     }
   }
-  
-  :has(#sad-1:checked) {
-    .icon-others, .icon-like {
+
+  &:has(#sad-1:checked) {
+    .icon-others,
+    .icon-like {
       display: none;
     }
     .icon-sad {
       display: block;
     }
   }
-  
-  :has(#angry-1:checked) {
-    .icon-others, .icon-like {
+
+  &:has(#angry-1:checked) {
+    .icon-others,
+    .icon-like {
       display: none;
     }
     .icon-angry {
@@ -163,7 +161,7 @@
 }
 
 .friends-blog.blog2 {
-  :has(#like-2:checked) {
+  &:has(#like-2:checked) {
     .icon-others {
       display: none;
     }
@@ -172,8 +170,8 @@
       /* color:rgb(37, 99, 235); */
     }
   }
-  
-  :has(#love-2:checked) {
+
+  &:has(#love-2:checked) {
     .icon-like {
       display: none;
     }
@@ -181,36 +179,40 @@
       display: block;
     }
   }
-  
-  :has(#happy-2:checked) {
-    .icon-others, .icon-like {
+
+  &:has(#happy-2:checked) {
+    .icon-others,
+    .icon-like {
       display: none;
     }
     .icon-happy {
       display: block;
     }
   }
-  
-  :has(#supprised-2:checked) {
-    .icon-others, .icon-like {
+
+  &:has(#surprised-2:checked) {
+    .icon-others,
+    .icon-like {
       display: none;
     }
-    .icon-supprised {
+    .icon-surprised {
       display: block;
     }
   }
-  
-  :has(#sad-2:checked) {
-    .icon-others, .icon-like {
+
+  &:has(#sad-2:checked) {
+    .icon-others,
+    .icon-like {
       display: none;
     }
     .icon-sad {
       display: block;
     }
   }
-  
-  :has(#angry-2:checked) {
-    .icon-others, .icon-like {
+
+  &:has(#angry-2:checked) {
+    .icon-others,
+    .icon-like {
       display: none;
     }
     .icon-angry {
@@ -218,10 +220,6 @@
     }
   }
 }
-
-
-
-
 
 @keyframes toggle-like {
   0% {
@@ -240,7 +238,7 @@
   }
 }
 
-@keyframes hover-effect {
+/* @keyframes hover-effect {
   0% {
     width: auto;
     bottom: 0;
@@ -252,10 +250,9 @@
     bottom: 2.3rem;
     opacity: 1;
   }
-}
+} */
 
 @media screen and (min-width: 1340px) {
-
   .aside-left,
   .aside-right {
     flex-grow: 1;
