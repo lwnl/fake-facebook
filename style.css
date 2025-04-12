@@ -53,6 +53,11 @@
 }
 
 .friends-blog {
+  &:has(#like:checked) {
+    .icon-others {
+      display: none;
+    }
+  }
   &:has(#love:checked),
   &:has(#happy:checked),
   &:has(#surprised:checked),
@@ -71,10 +76,6 @@
 
     span.liked {
       display: block;
-    }
-
-    .icon-like {
-      display: none;
     }
   }
 
@@ -104,59 +105,46 @@
     .icon-others {
       display: none;
     }
-    .icon-like {
-      display: block;
-      /* color:rgb(37, 99, 235); */
-    }
   }
-
-  &:has(#love-1:checked) {
-    .icon-like {
-      display: none;
-    }
-    .icon-love {
-      display: block;
-    }
-  }
-
-  &:has(#happy-1:checked) {
-    .icon-others,
-    .icon-like {
-      display: none;
-    }
-    .icon-happy {
-      display: block;
-    }
-  }
-
-  &:has(#surprised-1:checked) {
-    .icon-others,
-    .icon-like {
-      display: none;
-    }
-    .icon-surprised {
-      display: block;
-    }
-  }
-
-  &:has(#sad-1:checked) {
-    .icon-others,
-    .icon-like {
-      display: none;
-    }
-    .icon-sad {
-      display: block;
-    }
-  }
-
+  &:has(#love-1:checked),
+  &:has(#happy-1:checked),
+  &:has(#surprised-1:checked),
+  &:has(#sad-1:checked),
   &:has(#angry-1:checked) {
-    .icon-others,
     .icon-like {
       display: none;
     }
-    .icon-angry {
+
+    .toggle-like {
+      color: rgb(37, 99, 235);
+    }
+    span.unliked {
+      display: none;
+    }
+
+    span.liked {
       display: block;
     }
+  }
+
+  &:has(#love-1:checked) .icon-love {
+    display: block;
+  }
+
+  &:has(#happy-1:checked) .icon-happy {
+    display: block;
+  }
+
+  &:has(#surprised-1:checked) .icon-surprised {
+    display: block;
+  }
+
+  &:has(#sad-1:checked) .icon-sad {
+    display: block;
+  }
+
+  &:has(#angry-1:checked) .icon-angry {
+    display: block;
   }
 }
 
@@ -165,59 +153,46 @@
     .icon-others {
       display: none;
     }
-    .icon-like {
-      display: block;
-      /* color:rgb(37, 99, 235); */
-    }
   }
-
-  &:has(#love-2:checked) {
-    .icon-like {
-      display: none;
-    }
-    .icon-love {
-      display: block;
-    }
-  }
-
-  &:has(#happy-2:checked) {
-    .icon-others,
-    .icon-like {
-      display: none;
-    }
-    .icon-happy {
-      display: block;
-    }
-  }
-
-  &:has(#surprised-2:checked) {
-    .icon-others,
-    .icon-like {
-      display: none;
-    }
-    .icon-surprised {
-      display: block;
-    }
-  }
-
-  &:has(#sad-2:checked) {
-    .icon-others,
-    .icon-like {
-      display: none;
-    }
-    .icon-sad {
-      display: block;
-    }
-  }
-
+  &:has(#love-2:checked),
+  &:has(#happy-2:checked),
+  &:has(#surprised-2:checked),
+  &:has(#sad-2:checked),
   &:has(#angry-2:checked) {
-    .icon-others,
     .icon-like {
       display: none;
     }
-    .icon-angry {
+
+    .toggle-like {
+      color: rgb(37, 99, 235);
+    }
+    span.unliked {
+      display: none;
+    }
+
+    span.liked {
       display: block;
     }
+  }
+
+  &:has(#love-2:checked) .icon-love {
+    display: block;
+  }
+
+  &:has(#happy-2:checked) .icon-happy {
+    display: block;
+  }
+
+  &:has(#surprised-2:checked) .icon-surprised {
+    display: block;
+  }
+
+  &:has(#sad-2:checked) .icon-sad {
+    display: block;
+  }
+
+  &:has(#angry-2:checked) .icon-angry {
+    display: block;
   }
 }
 
@@ -238,30 +213,12 @@
   }
 }
 
-/* @keyframes hover-effect {
-  0% {
-    width: auto;
-    bottom: 0;
-    opacity: 1;
-  }
-
-  100% {
-    width: auto;
-    bottom: 2.3rem;
-    opacity: 1;
-  }
-} */
-
 @media screen and (min-width: 1340px) {
   .aside-left,
   .aside-right {
     flex-grow: 1;
     max-width: 400px;
   }
-
-  /* .middle {
-    width: 700px !important;
-  } */
 }
 
 /* shortcomings summary */
